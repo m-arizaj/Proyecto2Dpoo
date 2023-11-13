@@ -68,8 +68,8 @@ public class Principal extends Application {
         btnIniciarSesion.setOnAction(e -> abrirVentanaIniciarSesion(sistema,primaryStage));
         btnOpcionesAvanzadas.setOnAction(e -> mostrarOpcionesAvanzadas(primaryStage));
         btnIniciarEmpleado.setOnAction(e -> iniciarSesionEmpleado());
-        btnIniciarAdmin.setOnAction(e -> iniciarSesionAdministrador());
-        btnIniciarAdminLocal.setOnAction(e -> iniciarSesionAdminLocal());
+        btnIniciarAdmin.setOnAction(e -> iniciarSesionAdmin(primaryStage, sistema));
+        btnIniciarAdminLocal.setOnAction(e -> iniciarSesionAdminLocal(primaryStage, sistema));
         btnSalir.setOnAction(e -> primaryStage.close());      
 
      // Diseño de la interfaz
@@ -85,7 +85,8 @@ public class Principal extends Application {
         
         btnRegistrarse.setStyle("-fx-background-color: #3498DB;"); 
         btnIniciarSesion.setStyle("-fx-background-color: #5DADE2;"); 
-        btnSalir.setStyle("-fx-background-color: #85C1E9;"); 
+        btnSalir.setStyle("-fx-background-color: #85C1E9;");
+        btnOpcionesAvanzadas.setStyle("-fx-background-color: #85C1E9;");
 
         gridPane.add(btnRegistrarse, 4, 1);
         gridPane.add(btnIniciarSesion, 4, 2);
@@ -259,8 +260,15 @@ public class Principal extends Application {
     private void mostrarOpcionesAvanzadas(Stage primaryStage) {
         // Lógica para mostrar los botones de opciones avanzadas
         VBox opcionesAvanzadasLayout = new VBox(10);
+        opcionesAvanzadasLayout.setAlignment(Pos.CENTER); // Centrar el VBox
         opcionesAvanzadasLayout.setPadding(new Insets(10));
+        
+        btnIniciarEmpleado.setStyle("-fx-background-color: #3498DB;");
+        btnIniciarAdmin.setStyle("-fx-background-color: #5DADE2;");
+        btnIniciarAdminLocal.setStyle("-fx-background-color: #85C1E9;");
+        
         opcionesAvanzadasLayout.getChildren().addAll(btnIniciarEmpleado, btnIniciarAdmin, btnIniciarAdminLocal, crearBtnRegresar(primaryStage));
+        opcionesAvanzadasLayout.setStyle("-fx-background-color: beige;"); // Establecer color de fondo
         Scene opcionesAvanzadasScene = new Scene(opcionesAvanzadasLayout, 400, 200);
 
         // Actualizar la escena actual
@@ -269,6 +277,7 @@ public class Principal extends Application {
 
     private Button crearBtnRegresar(Stage primaryStage) {
         Button btnRegresar = new Button("Regresar");
+        btnRegresar.setStyle("-fx-background-color: #85C1E9;"); 
         btnRegresar.setOnAction(e -> primaryStage.setScene(escenaPrincipal));  // Restaurar la escena principal
         return btnRegresar;
     }
@@ -279,14 +288,14 @@ public class Principal extends Application {
         
     }
 
-    private void iniciarSesionAdministrador() {
-        // Lógica para iniciar sesión como administrador
-        labelResultado.setText("Iniciar Sesión como Administrador");
+    private void iniciarSesionAdmin(Stage primaryStage, SistemaAlquiler sistema) {
+        PanelAdmi panelAdmi = new PanelAdmi();
+        PanelAdmi.iniciarSesionAdmin(primaryStage, escenaPrincipal,sistema);
     }
 
-    private void iniciarSesionAdminLocal() {
-        // Lógica para iniciar sesión como administrador local
-        labelResultado.setText("Iniciar Sesión como Administrador Local");
+    private void iniciarSesionAdminLocal(Stage primaryStage, SistemaAlquiler sistema) {
+    	PanelAdmiLocal panelAdmiLocal = new PanelAdmiLocal();
+    	PanelAdmiLocal.iniciarSesionAdminLocal(primaryStage, escenaPrincipal,sistema);
     }
     
 }

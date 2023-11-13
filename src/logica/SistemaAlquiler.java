@@ -24,6 +24,7 @@ import java.util.concurrent.TimeUnit;
 import java.text.ParseException;
 import java.util.UUID;
 import interfaz.*;
+import persistencia.Persistencia;
 
 
 public class SistemaAlquiler {
@@ -95,15 +96,19 @@ public class SistemaAlquiler {
     
 
 
-	public void eliminarAuto(String placaEliminar) {
+    public boolean eliminarAuto(String placaEliminar) {
         Iterator<Vehiculo> iterator = inventario.iterator();
         while (iterator.hasNext()) {
             Vehiculo vehiculo = iterator.next();
             if (vehiculo.getPlaca().equals(placaEliminar)) {
                 iterator.remove(); 
-                System.out.println("Vehículo con placa " + placaEliminar + " eliminado del inventario.");
+                Persistencia.escribirVehiculos(this,"datos/vehiculos.csv");
+                agregarEventoAlHistorial(placaEliminar, "Se elimino el auto con placa " + placaEliminar + " del invetario.");
+                Persistencia.escribirEventosVehiculos(this,"datos/eventos.csv");
+                return true;
             }
         }
+		return false;
     }
 
 
@@ -201,7 +206,16 @@ public class SistemaAlquiler {
         }
         return administradoresLocales;
     }
-
+	
+	
+	public AdministradorLocal autenticarAdmiLocal(List<AdministradorLocal> administradoresLocales, String nombreUsuario, String contrasena) {
+	    for (AdministradorLocal adminLocal : administradoresLocales) {
+	        if (nombreUsuario.equals(adminLocal.getNombreUsuario()) && contrasena.equals(adminLocal.getContrasena())) {
+	            return adminLocal;
+	        }
+	    }
+	    return null;
+	}
 
 
 	public List<Empleado> getEmpleadosPorSede(Sede sede) {
@@ -356,6 +370,15 @@ public class SistemaAlquiler {
 	        } else {
 	            return new ArrayList<>();
 	        }
+	    }
+
+
+	 public Map<String, String> obtenerSeguros() {
+	        Map<String, String> mapaSeguros = new HashMap<>();
+	        for (Seguro seguro : seguros) {
+	            mapaSeguros.put(seguro.getNombre(), seguro.getPrecio());
+	        }
+	        return mapaSeguros;
 	    }
 	 
 }
