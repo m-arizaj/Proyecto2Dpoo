@@ -152,11 +152,9 @@ public class SistemaAlquiler {
 	}
 
 
-	public void completarAlquiler(String id, Scanner scanner) {
+
     	
-    	PanelEmpleado.completarAlquiler(id, scanner);
-    	
-    }
+    
 
 
     public void devolverVehiculo(Vehiculo vehiculo) {

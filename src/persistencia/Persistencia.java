@@ -12,6 +12,7 @@ import java.util.Map;
 
 import com.opencsv.CSVReaderBuilder;
 import com.opencsv.CSVWriter;
+import com.opencsv.exceptions.CsvException;
 import com.opencsv.exceptions.CsvValidationException;
 import com.opencsv.CSVReader;
 
@@ -380,130 +381,108 @@ public class Persistencia {
 		        e.printStackTrace();
 		    }
 		}
-	public static String buscarDisponible (String plaquita)
-	{
-		String csvFilePath = "./datos/vehiculos.csv";
-		
-		String respuesta = "Placa no encontrada";
-	    
-	    try (BufferedReader br = new BufferedReader(new FileReader(csvFilePath))) {
-	        String line;
-	        while ((line = br.readLine()) != null) {
-	            String[] campos = line.split(",");
-	            String placa = campos[0];
-	            
-	            System.out.println(placa);
-	            String placaSinComillas = placa.substring(1, placa.length() - 1);
-	            System.out.println(placaSinComillas);
-	            System.out.println(plaquita);
-	            
-	            
-	            String estado = campos[6];
-	            System.out.println(estado);
-	            
-	            if (placaSinComillas.equals(plaquita)) {
-	            	String estadoSinComillas = estado.substring(1, estado.length() - 1);
-	                respuesta = estadoSinComillas;
-	                break;
-	            }
-	        }
-	    } 
-	    catch (IOException e) 
-	    {
-	        e.printStackTrace();
-	    }
-	    return respuesta;
-	}
-	
 
-	public static void cambiarEstado(String plaquita, String estatus) 
-	{
-		String csvFilePath = "./datos/vehiculos.csv";
-		
-		List<String> lineas = new ArrayList<>();
-		
-        
-        try (BufferedReader br = new BufferedReader(new FileReader(csvFilePath)))
-        {
-        	String line;
-        	while ((line = br.readLine()) != null)
-        	{
-        		String[] campos = line.split(",");
-                String placa = campos[0];
-                String placaSinComillas = placa.substring(1, placa.length() - 1);
-                
-                if (placaSinComillas.equals(plaquita))
-                {
-                	campos[6] = estatus;
+	
+	public static boolean verificarUsuario(String usuario, String contrasena) {
+    	try (CSVReader reader = new CSVReader(new FileReader("./datos/empleados.csv"))) {
+            String[] linea;
+            while ((linea = reader.readNext()) != null) {
+                // Verificar la coincidencia de usuario y contraseña en cada fila del CSV
+                if (linea.length >= 2 && usuario.equals(linea[0]) && contrasena.equals(linea[1])) {
+                    return true; // Coincidencia encontrada
                 }
-                lineas.add(String.join(",", campos));
-                
-        	}
-        } 
-        catch (IOException e) 
-        {
-        	e.printStackTrace();
-        }
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter(csvFilePath))) {
-            for (String linea : lineas) {
-                bw.write(linea);
-                bw.newLine();
             }
-        } catch (IOException e) {
+        } catch (IOException | CsvValidationException e) {
+            e.printStackTrace(); // Manejo básico de errores, ajusta según tus necesidades
+        }
+        return false; // No se encontró coincidencia
+    }
+	
+	public static String obtenerEstadoVehiculo(String placa) throws CsvValidationException 
+    {
+        try (CSVReader reader = new CSVReader(new FileReader("./datos/carros.csv"))) 
+        {
+            String[] linea;
+            while ((linea = reader.readNext()) != null) 
+            {
+                if (linea.length > 8 && placa.equals(linea[0])) 
+                {
+                    return linea[6]; // Devuelve el estado del vehículo (ajusta según tu CSV)
+                }
+            }
+        } catch (IOException | CsvValidationException e) 
+        {
             e.printStackTrace();
         }
-        }
-    
+        return null; // No se encontró el vehículo con la placa especificada
+    }
 	
-	public static void cambiarMantenimiento (String plaquita, String estatus, String observacion, String fecha)
-	{
-		String respuesta = observacion + " " + "/" +" "+ fecha;
-		cambiarEstado(plaquita, estatus);
-		
-		String csvFilePath = "./datos/vehiculos.csv";
-		List<String> lineas = new ArrayList<>();
-		try (BufferedReader br = new BufferedReader(new FileReader(csvFilePath)))
-        {
-        	String line;
-        	while ((line = br.readLine()) != null)
-        	{
-        		String[] campos = line.split(",");
-                String placa = campos[0];
-                String placaSinComillas = placa.substring(1, placa.length() - 1);
-                
-                if (placaSinComillas.equals(plaquita))
-                {
-                	campos[9] = respuesta;
+public static void actualizarEstadoVehiculo(String placa, String nuevoEstado) throws CsvException {
+    
+    	
+    	try {
+            CSVReader reader = new CSVReader(new FileReader("./datos/carros.csv"));
+            List<String[]> lines = reader.readAll();
+            reader.close();
+
+            for (String[] line : lines) {
+                if (line.length > 0 && placa.equals(line[0])) {
+                    line[6] = nuevoEstado;  // Actualizar el estado
+                    
+                   
+                    break;
                 }
-                lineas.add(String.join(",", campos));
-                
-        	}
-        } 
-        catch (IOException e) 
-        {
-        	e.printStackTrace();
+            }
+
+            FileWriter writer = new FileWriter("./datos/carros.csv");
+            CSVWriter csvWriter = new CSVWriter(writer);
+            csvWriter.writeAll(lines);
+            csvWriter.close();
+        } catch (IOException | CsvValidationException e) {
+            e.printStackTrace(); // Manejo básico de errores, ajusta según tus necesidades
         }
-		
-		
-		try (BufferedWriter bw = new BufferedWriter(new FileWriter(csvFilePath)))
-		{
-			for (String linea : lineas)
-			{
-				bw.write(linea);
-                bw.newLine();
-			}
-		}
-		catch (IOException e)
-		{
-			e.printStackTrace();
-		}
+    }
+
+public static void actualizarEstadoYFechaReintegro(String placa, String nuevoEstado, String explicacionProblema, String fechaReintegro) throws CsvException {
+    
+    try {
+        CSVReader reader = new CSVReader(new FileReader("./datos/carros.csv"));
+        List<String[]> lines = reader.readAll();
+        reader.close();
+
+        for (String[] line : lines) {
+            if (line.length > 0 && placa.equals(line[0])) {
+                line[6] = nuevoEstado;  // Actualizar el estado
+                line[9] = fechaReintegro + " - " + explicacionProblema;  // Actualizar la fecha de reintegro
+                break;
+            }
+        }
+
+        FileWriter writer = new FileWriter("./datos/carros.csv");
+        CSVWriter csvWriter = new CSVWriter(writer);
+        csvWriter.writeAll(lines);
+        csvWriter.close();
+    } catch (IOException | CsvValidationException e) {
+        e.printStackTrace(); // Manejo básico de errores, ajusta según tus necesidades
+    }
+    
+    
+}
+
+public static void guardarConductorAdicional(String idReserva, String nombre, String fechaNacimiento,
+		String nacionalidad, String numeroLicencia, String paisExpedicionLicencia, String fechaVencimientoLicencia) {
+
+	try {
+		FileWriter writer = new FileWriter("./datos/conductoresAdicionales.csv", true);
+		CSVWriter csvWriter = new CSVWriter(writer);
+		String[] nuevoConductorAdicional = { idReserva, nombre, fechaNacimiento, nacionalidad, numeroLicencia,
+				paisExpedicionLicencia, fechaVencimientoLicencia };
+		csvWriter.writeNext(nuevoConductorAdicional);
+		csvWriter.close();
+	} catch (IOException e) {
+		e.printStackTrace(); // Manejo básico de errores, ajusta según tus necesidades
 	}
-	public static boolean reconocimientoEmpleado(String usuario, String contrasena)
-	{
-		
-		return false;
-		
-	}
+}
 
 	
 }

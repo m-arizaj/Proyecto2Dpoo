@@ -1,5 +1,6 @@
 package interfaz;
 
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -16,6 +17,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import interfaz.PanelEmpleado;
 
 
 public class Principal extends Application {
@@ -274,6 +276,7 @@ public class Principal extends Application {
     private void iniciarSesionEmpleado() {
         // Lógica para iniciar sesión como empleado
         labelResultado.setText("Iniciar Sesión como Empleado");
+        
     }
 
     private void iniciarSesionAdministrador() {
