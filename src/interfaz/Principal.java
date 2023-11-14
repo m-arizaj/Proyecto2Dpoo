@@ -53,6 +53,7 @@ public class Principal extends Application {
         // Elementos de la interfaz
         Button btnRegistrarse = new Button("Registrarse");
         Button btnIniciarSesion = new Button("Iniciar Sesión");
+        Button btnVerDisponibilidadAnual = new Button("Disponibilidad anual");
         Button btnOpcionesAvanzadas = new Button("Opciones Avanzadas");
         
         btnIniciarEmpleado = new Button("Iniciar Sesión como Empleado");
@@ -65,6 +66,7 @@ public class Principal extends Application {
         btnRegistrarse.setOnAction(e -> abrirVentanaRegistro(primaryStage));
         btnIniciarSesion.setOnAction(e -> abrirVentanaIniciarSesion(sistema,primaryStage));
         btnOpcionesAvanzadas.setOnAction(e -> mostrarOpcionesAvanzadas(primaryStage));
+        btnVerDisponibilidadAnual.setOnAction(e -> verDisponibilidadAnualPorSede());
         btnIniciarEmpleado.setOnAction(e -> iniciarSesionEmpleado());
         btnIniciarAdmin.setOnAction(e -> iniciarSesionAdmin(primaryStage, sistema));
         btnIniciarAdminLocal.setOnAction(e -> iniciarSesionAdminLocal(primaryStage, sistema));
@@ -82,13 +84,15 @@ public class Principal extends Application {
         gridPane.add(lblTitulo, 4, 0, 5, 1); 
         
         btnRegistrarse.setStyle("-fx-background-color: #3498DB;"); 
-        btnIniciarSesion.setStyle("-fx-background-color: #5DADE2;"); 
+        btnIniciarSesion.setStyle("-fx-background-color: #5DADE2;");
+        btnVerDisponibilidadAnual.setStyle("-fx-background-color: #85C1E9;");
         btnSalir.setStyle("-fx-background-color: #85C1E9;");
         btnOpcionesAvanzadas.setStyle("-fx-background-color: #85C1E9;");
 
         gridPane.add(btnRegistrarse, 4, 1);
         gridPane.add(btnIniciarSesion, 4, 2);
-        gridPane.add(btnSalir, 4, 3);
+        gridPane.add(btnVerDisponibilidadAnual, 4, 3);
+        gridPane.add(btnSalir, 4, 4);
 
         gridPane.add(btnOpcionesAvanzadas, 5, 5, 1, 1);
         GridPane.setValignment(btnOpcionesAvanzadas, VPos.BOTTOM);
@@ -106,7 +110,89 @@ public class Principal extends Application {
         primaryStage.show();
     }
 
-    private void abrirVentanaRegistro(Stage primaryStage) {
+	private void verDisponibilidadAnualPorSede() {
+	    Stage ventanaDisponibilidad = new Stage();
+	    ventanaDisponibilidad.setTitle("Disponibilidad Anual");
+
+	    // Diseño de la interfaz de la ventana de disponibilidad
+	    VBox layoutVentanaDisponibilidad = new VBox(10);
+	    layoutVentanaDisponibilidad.setAlignment(Pos.CENTER);
+
+	    // Botones para ver disponibilidad por sede
+	    Button btnVerBogota = new Button("Ver Sede Bogotá");
+	    Button btnVerDorado = new Button("Ver Sede Dorado");
+	    Button btnSalir = new Button("Salir");
+	    
+	    btnVerBogota.setStyle("-fx-background-color: #3498DB;"); 
+	    btnVerDorado.setStyle("-fx-background-color: #5DADE2;");
+	    btnSalir.setStyle("-fx-background-color: #85C1E9;");
+
+	    // Asignar eventos a los botones
+	    btnVerBogota.setOnAction(e -> mostrarDisponibilidadSede("Bogotá"));
+	    btnVerDorado.setOnAction(e -> mostrarDisponibilidadSede("Dorado"));
+	    btnSalir.setOnAction(e -> ventanaDisponibilidad.close());
+
+	    // Agregar elementos al diseño
+	    layoutVentanaDisponibilidad.getChildren().addAll(btnVerBogota, btnVerDorado, btnSalir);
+	    layoutVentanaDisponibilidad.setStyle("-fx-background-color: beige;"); // Fondo beige
+
+	    // Escena de la ventana de disponibilidad
+	    Scene sceneVentanaDisponibilidad = new Scene(layoutVentanaDisponibilidad, 300, 200);
+
+	    // Asignar la escena a la ventana
+	    ventanaDisponibilidad.setScene(sceneVentanaDisponibilidad);
+
+	    // Mostrar la ventana
+	    ventanaDisponibilidad.show();
+	}
+
+
+
+
+	private void mostrarDisponibilidadSede(String nombreSede) {
+	    // Crear una nueva ventana
+	    Stage ventanaImagen = new Stage();
+	    ventanaImagen.setTitle("Imagen de la Sede");
+	    
+
+	    // Crear un ImageView para mostrar la imagen
+	    ImageView imageView = new ImageView();
+
+	    // Cargar la imagen según la sede seleccionada
+	    Image imagen;
+	    if (nombreSede.equalsIgnoreCase("Bogotá")) {
+	        imagen = new Image("file:datos/nuestroBogota.png"); // Ruta de la imagen de Bogotá
+	    } else if (nombreSede.equalsIgnoreCase("Dorado")) {
+	        imagen = new Image("file:datos/dorado.png"); // Ruta de la imagen de Dorado
+	    } else {
+	        // Puedes manejar otros casos o mostrar un mensaje de error
+	        return;
+	    }
+
+	    // Configurar el ImageView con la imagen cargada
+	    imageView.setImage(imagen);
+	    imageView.setFitWidth(500); // Ajustar el ancho de la imagen según tus necesidades
+	    imageView.setPreserveRatio(true);
+
+	    // Diseño de la interfaz de la ventana de imagen
+	    VBox layoutVentanaImagen = new VBox(10);
+	    layoutVentanaImagen.setAlignment(Pos.CENTER);
+	    layoutVentanaImagen.getChildren().addAll(imageView);
+	    layoutVentanaImagen.setStyle("-fx-background-color: beige;"); // Fondo beige
+	    
+	    // Escena de la ventana de imagen
+	    Scene sceneVentanaImagen = new Scene(layoutVentanaImagen);
+
+	    // Asignar la escena a la ventana
+	    ventanaImagen.setScene(sceneVentanaImagen);
+
+	    // Mostrar la ventana
+	    ventanaImagen.show();
+	}
+
+
+
+	private void abrirVentanaRegistro(Stage primaryStage) {
     	GridPane layout = new GridPane();
         layout.setVgap(10);
         layout.setHgap(10);
