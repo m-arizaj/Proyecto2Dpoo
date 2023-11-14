@@ -17,7 +17,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import interfaz.PanelEmpleado;
+
 
 
 public class Principal extends Application {
@@ -70,7 +70,7 @@ public class Principal extends Application {
 	    btnIniciarSesion.setOnAction(e -> abrirVentanaIniciarSesion(sistema, primaryStage));
 	    btnOpcionesAvanzadas.setOnAction(e -> mostrarOpcionesAvanzadas(primaryStage));
 	    btnVerDisponibilidadAnual.setOnAction(e -> verDisponibilidadAnualPorSede());
-	    btnIniciarEmpleado.setOnAction(e -> iniciarSesionEmpleado());
+	    btnIniciarEmpleado.setOnAction(e -> iniciarSesionEmpleado(primaryStage, sistema));
 	    btnIniciarAdmin.setOnAction(e -> iniciarSesionAdmin(primaryStage, sistema));
 	    btnIniciarAdminLocal.setOnAction(e -> iniciarSesionAdminLocal(primaryStage, sistema));
 	    btnSalir.setOnAction(e -> primaryStage.close());
@@ -375,8 +375,9 @@ public class Principal extends Application {
 	}
 
 	/* Lógica para iniciar sesión como empleado */
-	private void iniciarSesionEmpleado() {
-	    labelResultado.setText("Iniciar Sesión como Empleado");
+	private void iniciarSesionEmpleado(Stage primaryStage, SistemaAlquiler sistema) {
+	    PanelEmpleado panelEmpleado = new PanelEmpleado();
+	    PanelEmpleado.start(primaryStage, escenaPrincipal, sistema);
 	}
 
 	/* Lógica para iniciar sesión como administrador */
