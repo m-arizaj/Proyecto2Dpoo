@@ -54,9 +54,6 @@ public class Principal extends Application {
 	    persistencia.cargarDatos(sistema, "datos/carros.csv", "datos/clientes.csv", "datos/empleados.csv", "datos/reservas.csv", "datos/seguros.csv");
 
 	    /* Creamos los elementos de la interfaz */
-	    Button btnRegistrarse = new Button("Registrarse");
-	    Button btnIniciarSesion = new Button("Iniciar Sesión");
-	    Button btnVerDisponibilidadAnual = new Button("Disponibilidad anual");
 	    Button btnOpcionesAvanzadas = new Button("Opciones Avanzadas");
 
 	    btnIniciarEmpleado = new Button("Iniciar Sesión como Empleado");
@@ -66,10 +63,6 @@ public class Principal extends Application {
 	    labelResultado = new Label();
 
 	    /* Asignamos los eventos a los botones */
-	    btnRegistrarse.setOnAction(e -> abrirVentanaRegistro(primaryStage));
-	    btnIniciarSesion.setOnAction(e -> abrirVentanaIniciarSesion(sistema, primaryStage));
-	    btnOpcionesAvanzadas.setOnAction(e -> mostrarOpcionesAvanzadas(primaryStage));
-	    btnVerDisponibilidadAnual.setOnAction(e -> verDisponibilidadAnualPorSede());
 	    btnIniciarEmpleado.setOnAction(e -> iniciarSesionEmpleado(primaryStage, sistema));
 	    btnIniciarAdmin.setOnAction(e -> iniciarSesionAdmin(primaryStage, sistema));
 	    btnIniciarAdminLocal.setOnAction(e -> iniciarSesionAdminLocal(primaryStage, sistema));
@@ -86,19 +79,15 @@ public class Principal extends Application {
 	    lblTitulo.setFont(Font.font("Arial", FontWeight.BOLD, 20));
 	    gridPane.add(lblTitulo, 4, 0, 5, 1);
 
-	    btnRegistrarse.setStyle("-fx-background-color: #3498DB;");
-	    btnIniciarSesion.setStyle("-fx-background-color: #5DADE2;");
-	    btnVerDisponibilidadAnual.setStyle("-fx-background-color: #85C1E9;");
+	    btnIniciarEmpleado.setStyle("-fx-background-color: #3498DB;");
+	    btnIniciarAdmin.setStyle("-fx-background-color: #5DADE2;");
+	    btnIniciarAdminLocal.setStyle("-fx-background-color: #85C1E9;");
 	    btnSalir.setStyle("-fx-background-color: #85C1E9;");
-	    btnOpcionesAvanzadas.setStyle("-fx-background-color: #85C1E9;");
 
-	    gridPane.add(btnRegistrarse, 4, 1);
-	    gridPane.add(btnIniciarSesion, 4, 2);
-	    gridPane.add(btnVerDisponibilidadAnual, 4, 3);
+	    gridPane.add(btnIniciarEmpleado, 4, 1);
+	    gridPane.add(btnIniciarAdmin, 4, 2);
+	    gridPane.add(btnIniciarAdminLocal, 4, 3);
 	    gridPane.add(btnSalir, 4, 4);
-
-	    gridPane.add(btnOpcionesAvanzadas, 5, 5, 1, 1);
-	    GridPane.setValignment(btnOpcionesAvanzadas, VPos.BOTTOM);
 
 	    gridPane.setStyle("-fx-background-color: beige;");
 
@@ -111,259 +100,6 @@ public class Principal extends Application {
 
 	    /* Mostramos la interfaz gráfica */
 	    primaryStage.show();
-	}
-
-
-	/*
-	 * Creamos una nueva ventana para mostrar la disponibilidad anual por sede.
-	 */
-	private void verDisponibilidadAnualPorSede() {
-	    Stage ventanaDisponibilidad = new Stage();
-	    ventanaDisponibilidad.setTitle("Disponibilidad Anual");
-
-	    /* Diseñamos la interfaz de la ventana de disponibilidad */
-	    VBox layoutVentanaDisponibilidad = new VBox(10);
-	    layoutVentanaDisponibilidad.setAlignment(Pos.CENTER);
-
-	    /* Botones para ver disponibilidad por sede */
-	    Button btnVerBogota = new Button("Ver Sede Bogotá");
-	    Button btnVerDorado = new Button("Ver Sede Dorado");
-	    Button btnSalir = new Button("Salir");
-
-	    /* Establecemos el estilo de los botones */
-	    btnVerBogota.setStyle("-fx-background-color: #3498DB;");
-	    btnVerDorado.setStyle("-fx-background-color: #5DADE2;");
-	    btnSalir.setStyle("-fx-background-color: #85C1E9;");
-
-	    /* Asignamos eventos a los botones */
-	    btnVerBogota.setOnAction(e -> mostrarDisponibilidadSede("Bogotá"));
-	    btnVerDorado.setOnAction(e -> mostrarDisponibilidadSede("Dorado"));
-	    btnSalir.setOnAction(e -> ventanaDisponibilidad.close());
-
-	    /* Agregamos elementos al diseño */
-	    layoutVentanaDisponibilidad.getChildren().addAll(btnVerBogota, btnVerDorado, btnSalir);
-	    layoutVentanaDisponibilidad.setStyle("-fx-background-color: beige;"); // Fondo beige
-
-	    /* Creamos la escena de la ventana de disponibilidad */
-	    Scene sceneVentanaDisponibilidad = new Scene(layoutVentanaDisponibilidad, 300, 200);
-
-	    /* Asignamos la escena a la ventana */
-	    ventanaDisponibilidad.setScene(sceneVentanaDisponibilidad);
-
-	    /* Mostramos la ventana */
-	    ventanaDisponibilidad.show();
-	}
-
-	/*
-	 * Mostramos una nueva ventana con la imagen de la sede seleccionada.
-	 */
-	private void mostrarDisponibilidadSede(String nombreSede) {
-	    /* Creamos una nueva ventana */
-	    Stage ventanaImagen = new Stage();
-	    ventanaImagen.setTitle("Imagen de la Sede");
-
-	    /* Creamos un ImageView para mostrar la imagen */
-	    ImageView imageView = new ImageView();
-
-	    /* Cargamos la imagen según la sede seleccionada */
-	    Image imagen;
-	    if (nombreSede.equalsIgnoreCase("Bogotá")) {
-	        imagen = new Image("file:datos/nuestroBogota.png"); // Ruta de la imagen de Bogotá
-	    } else if (nombreSede.equalsIgnoreCase("Dorado")) {
-	        imagen = new Image("file:datos/dorado.png"); // Ruta de la imagen de Dorado
-	    } else {
-	        // Podemos manejar otros casos o mostrar un mensaje de error
-	        return;
-	    }
-
-
-	    /* Configuramos el ImageView con la imagen cargada */
-	    imageView.setImage(imagen);
-	    imageView.setFitWidth(500); // Ajustamos el ancho de la imagen según tus necesidades
-	    imageView.setPreserveRatio(true);
-
-	    /* Diseñamos la interfaz de la ventana de imagen */
-	    VBox layoutVentanaImagen = new VBox(10);
-	    layoutVentanaImagen.setAlignment(Pos.CENTER);
-	    layoutVentanaImagen.getChildren().addAll(imageView);
-	    layoutVentanaImagen.setStyle("-fx-background-color: beige;"); // Fondo beige
-
-	    /* Creamos la escena de la ventana de imagen */
-	    Scene sceneVentanaImagen = new Scene(layoutVentanaImagen);
-
-	    /* Asignamos la escena a la ventana */
-	    ventanaImagen.setScene(sceneVentanaImagen);
-
-	    /* Mostramos la ventana */
-	    ventanaImagen.show();
-	}
-
-
-
-	/* Creamos la ventana de registro */
-	private void abrirVentanaRegistro(Stage primaryStage) {
-	    GridPane layout = new GridPane();
-	    layout.setVgap(10);
-	    layout.setHgap(10);
-	    layout.setPadding(new Insets(10));
-
-	    Label lblTitulo = new Label("Registro de Cliente");
-	    lblTitulo.setFont(Font.font("Arial", FontWeight.BOLD, 15));
-	    Label lblNombreUsuario = new Label("Nombre de usuario:");
-	    TextField nombreUsuarioField = new TextField();
-	    Label lblContrasena = new Label("Contraseña:");
-	    PasswordField contrasenaField = new PasswordField();
-	    Label lblNombre = new Label("Nombre:");
-	    TextField nombreField = new TextField();
-	    Label lblNumero = new Label("Numero telefonico:");
-	    TextField numeroField = new TextField();
-	    Label lblCorreo = new Label("Correo electronico:");
-	    TextField correoField = new TextField();
-	    Label lblNacimiento = new Label("Fecha de nacimiento (yyyy-MM-dd):");
-	    TextField fechaNacimientoField = new TextField();
-	    Label lblNacionalidad = new Label("Nacionalidad:");
-	    TextField nacionalidadField = new TextField();
-	    Label lblNumeroLic = new Label("Numero licencia de conduccion:");
-	    TextField numeroLicConField = new TextField();
-	    Label lblPaisEx = new Label("Pais de expedicion de la licencia de conduccion:");
-	    TextField paisExLicField = new TextField();
-	    Label lblVencimiento = new Label("Fecha de vencimiento de la licencia de conduccion (yyyy-MM-dd):");
-	    TextField fechaVenLicField = new TextField();
-	    Label lblTarjeta = new Label("Datos de la tarjeta de credito (numero-cvv-MM/yyyy):");
-	    TextField datosTarjetaField = new TextField();
-
-	    Button btnAceptar = new Button("Aceptar");
-	    btnAceptar.setOnAction(e -> {
-	        String nombreUsuario = nombreUsuarioField.getText();
-	        String contrasena = contrasenaField.getText();
-	        String nombre = nombreField.getText();
-	        String numero = numeroField.getText();
-	        String correo = correoField.getText();
-	        String fechaNacimiento = fechaNacimientoField.getText();
-	        String nacionalidad = nacionalidadField.getText();
-	        String numeroLicencia = numeroLicConField.getText();
-	        String expedicion = paisExLicField.getText();
-	        String vencimiento = fechaVenLicField.getText();
-	        String tarjeta = datosTarjetaField.getText();
-	        sistema.agregarCliente(nombreUsuario, contrasena, nombre, numero, correo, fechaNacimiento, 
-	                nacionalidad, numeroLicencia, expedicion, vencimiento, tarjeta);
-	        Persistencia.escribirClientes(sistema, "datos/clientes.csv");
-	        mostrarMensajeExitoRegistro();
-	        primaryStage.setScene(escenaPrincipal);
-	    });
-
-	    layout.add(lblTitulo, 0, 0, 2, 1); // Columna 0, Fila 0, Span 2 columnas
-	    layout.add(lblNombreUsuario, 0, 1);
-	    layout.add(nombreUsuarioField, 1, 1);
-	    layout.add(lblContrasena, 0, 2);
-	    layout.add(contrasenaField, 1, 2);
-	    layout.add(lblNombre, 0, 3);
-	    layout.add(nombreField, 1, 3);
-	    layout.add(lblNumero, 0, 4);
-	    layout.add(numeroField, 1, 4);
-	    layout.add(lblCorreo, 0, 5);
-	    layout.add(correoField, 1, 5);
-	    layout.add(lblNacimiento, 0, 6);
-	    layout.add(fechaNacimientoField, 1, 6);
-	    layout.add(lblNacionalidad, 0, 7);
-	    layout.add(nacionalidadField, 1, 7);
-	    layout.add(lblNumeroLic, 0, 8);
-	    layout.add(numeroLicConField, 1, 8);
-	    layout.add(lblPaisEx, 0, 9);
-	    layout.add(paisExLicField, 1, 9);
-	    layout.add(lblVencimiento, 0, 10);
-	    layout.add(fechaVenLicField, 1, 10);
-	    layout.add(lblTarjeta, 0, 11);
-	    layout.add(datosTarjetaField, 1, 11);
-	    layout.add(crearBtnRegresar(primaryStage), 0, 12);
-	    layout.add(btnAceptar, 1, 12);
-
-	    layout.setStyle("-fx-background-color: beige;");
-	    Scene scene = new Scene(layout, 600, 500);
-	    primaryStage.setScene(scene);
-	}
-
-    
-	/* Mostramos un mensaje de éxito en el registro */
-	private void mostrarMensajeExitoRegistro() {
-	    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-	    alert.setTitle("Éxito");
-	    alert.setHeaderText(null);
-	    alert.setContentText("Su cuenta fue creada satisfactoriamente.");
-	    alert.showAndWait();
-	}
-
-	/* Mostramos un mensaje en caso de inicio de sesión fallido */
-	private void mostrarMensajeInicioFallido() {
-	    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-	    alert.setTitle("Érror");
-	    alert.setHeaderText(null);
-	    alert.setContentText("Credenciales incorrectas. Intente nuevamente.");
-	    alert.showAndWait();
-	}
-
-	/* Abrimos la ventana de inicio de sesión */
-	private void abrirVentanaIniciarSesion(SistemaAlquiler sistema, Stage primaryStage) {
-	    // Lógica para abrir la ventana de inicio de sesión
-	    labelResultado.setText("Ventana de Inicio de Sesión");
-	    GridPane layout = new GridPane();
-	    layout.setVgap(10);
-	    layout.setHgap(10);
-	    layout.setPadding(new Insets(10));
-
-	    Label lblTitulo = new Label("Iniciar sesión");
-	    lblTitulo.setFont(Font.font("Arial", FontWeight.BOLD, 15));
-	    Label lblNombreUsuario = new Label("Nombre de usuario:");
-	    TextField nombreUsuarioField = new TextField();
-	    Label lblContrasena = new Label("Contraseña:");
-	    PasswordField contrasenaField = new PasswordField();
-
-	    Button btnAceptar = new Button("Ingresar");
-	    btnAceptar.setOnAction(e -> {
-	        String nombreUsuario = nombreUsuarioField.getText();
-	        String contrasena = contrasenaField.getText();
-	        boolean verif = sistema.autenticarCliente(nombreUsuario, contrasena);
-	        if (verif) {
-	            VentanasReserva ventanas = new VentanasReserva();
-	            ventanas.mostrarMenuReservas(sistema, primaryStage, nombreUsuario, escenaPrincipal);
-	        } else {
-	            mostrarMensajeInicioFallido();
-	        }
-	    });
-
-	    layout.add(lblTitulo, 0, 0, 2, 1); // Columna 0, Fila 0, Span 2 columnas
-	    layout.add(lblNombreUsuario, 0, 1);
-	    layout.add(nombreUsuarioField, 1, 1);
-	    layout.add(lblContrasena, 0, 2);
-	    layout.add(contrasenaField, 1, 2);
-	    layout.add(crearBtnRegresar(primaryStage), 0, 3);
-	    layout.add(btnAceptar, 1, 3);
-
-	    layout.setStyle("-fx-background-color: beige;");
-	    Scene scene = new Scene(layout, 400, 300);
-	    primaryStage.setScene(scene);
-	}
-
-    
-    
-
-	/* Mostramos las opciones avanzadas, como iniciar sesión como empleado o administrador */
-	private void mostrarOpcionesAvanzadas(Stage primaryStage) {
-	    // Lógica para mostrar los botones de opciones avanzadas
-	    VBox opcionesAvanzadasLayout = new VBox(10);
-	    opcionesAvanzadasLayout.setAlignment(Pos.CENTER); // Centrar el VBox
-	    opcionesAvanzadasLayout.setPadding(new Insets(10));
-
-	    btnIniciarEmpleado.setStyle("-fx-background-color: #3498DB;");
-	    btnIniciarAdmin.setStyle("-fx-background-color: #5DADE2;");
-	    btnIniciarAdminLocal.setStyle("-fx-background-color: #85C1E9;");
-
-	    opcionesAvanzadasLayout.getChildren().addAll(btnIniciarEmpleado, btnIniciarAdmin, btnIniciarAdminLocal, crearBtnRegresar(primaryStage));
-	    opcionesAvanzadasLayout.setStyle("-fx-background-color: beige;"); // Establecer color de fondo
-	    Scene opcionesAvanzadasScene = new Scene(opcionesAvanzadasLayout, 400, 200);
-
-	    // Actualizamos la escena actual
-	    primaryStage.setScene(opcionesAvanzadasScene);
 	}
 
 	/* Creamos un botón para regresar a la escena principal */
