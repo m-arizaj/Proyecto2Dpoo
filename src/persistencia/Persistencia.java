@@ -501,7 +501,7 @@ public static String[] obtenerReservaPorID(String idReserva) {
 public static void completarReservaConSeguro(String[] reserva, String tipoSeguro) throws CsvException {
     
     try {
-        CSVReader reader = new CSVReader(new FileReader("./datos/alquileres.csv"));
+        CSVReader reader = new CSVReader(new FileReader("/datos/alquileres.csv"));
         List<String[]> lines = reader.readAll();
         reader.close();
 

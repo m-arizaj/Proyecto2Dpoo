@@ -2,7 +2,6 @@ package interfaz;
 
 
 
-import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -31,9 +30,13 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
 
-public class PanelEmpleado extends Application
+public class PanelEmpleado 
 {
-	private Scene escenaPrincipal;
+	private static Scene menuPrincipal;
+	private static Scene escenaInicial;
+	private static Scene idAlquiler;
+	private static Scene conductores;
+	private static int contador = 0;
 
     
 
@@ -52,12 +55,18 @@ public class PanelEmpleado extends Application
         PasswordField contrasenaField = new PasswordField();
 
         Button ingresarButton = new Button("Ingresar");
+        
+        Button btnRegresar = new Button("Regresar");
+        btnRegresar.setOnAction(e -> primaryStage.setScene(escenaPrincipal));
 
         // Crear el diseño de la interfaz
         VBox root = new VBox(10);
         root.setPadding(new Insets(20));
-        root.getChildren().addAll(titulo, usuarioLabel, usuarioTextField, contrasenaLabel, contrasenaField, ingresarButton);
+        root.getChildren().addAll(titulo, usuarioLabel, usuarioTextField, contrasenaLabel, 
+        		contrasenaField, ingresarButton, btnRegresar);
         ingresarButton.setStyle("-fx-background-color: #3498DB;");
+        btnRegresar.setStyle("-fx-background-color: #5DADE2;");
+        root.setStyle("-fx-background-color: beige;");
 
         // Configurar el evento para el botón "Ingresar"
         ingresarButton.setOnAction(event -> {
@@ -78,7 +87,7 @@ public class PanelEmpleado extends Application
         // Configurar la escena y mostrar la ventana
         Scene scene = new Scene(root, 400, 300);
         primaryStage.setScene(scene);
-
+        escenaInicial = escenaPrincipal;
         
         primaryStage.show();
     }
@@ -87,50 +96,49 @@ public class PanelEmpleado extends Application
 
     private static void mostrarVentanaBienvenida(Stage primaryStage, String usuario) {
         // Crear la nueva ventana de bienvenida
-        Stage ventanaBienvenida = new Stage();
-        ventanaBienvenida.setTitle("Sistema de Alquiler de Vehículos Empleado - BIENVENIDO " + usuario);
-
-        Label bienvenidaLabel = new Label("BIENVENIDO " + usuario);
+    	
+        Label bienvenidaLabel = new Label("Bienvenido " + usuario);
+        bienvenidaLabel.setFont(Font.font("Arial", FontWeight.BOLD, 15));
         Label opcionesLabel = new Label("¿Qué desea hacer?");
 
         // Crear botones para las opciones
         Button opcion1Button = new Button("Completar reserva alquiler");
         Button opcion2Button = new Button("Actualizar estado vehículo");
         Button opcion3Button = new Button("Reportar mantenimiento de vehículo y fecha de disponibilidad");
-        Button salirButton = new Button("Salir");
+        Button regresarButton = new Button("Regresar");
 
         opcion1Button.setOnAction(e -> {
-            mostrarVentanaCompletarReservaAlquiler(ventanaBienvenida, usuario);
-            ventanaBienvenida.close();  // Cerrar la ventana actual
+            mostrarVentanaCompletarReservaAlquiler(primaryStage);
         });
 
         opcion2Button.setOnAction(e -> {
-            mostrarVentanaActualizarEstadoVehiculo(ventanaBienvenida, usuario);
-            ventanaBienvenida.close();  // Cerrar la ventana actual
+            mostrarVentanaActualizarEstadoVehiculo(primaryStage, usuario);
         });
 
         opcion3Button.setOnAction(e -> {
-            mostrarVentanaReportarMantenimiento(ventanaBienvenida, usuario);
-            ventanaBienvenida.close();  // Cerrar la ventana actual
+            mostrarVentanaReportarMantenimiento(primaryStage, usuario);
         });
 
-        salirButton.setOnAction(event -> ventanaBienvenida.close());
+        regresarButton.setOnAction(e -> primaryStage.setScene(escenaInicial));
 
         // Crear el diseño de la nueva ventana
         VBox bienvenidaRoot = new VBox(10);
         bienvenidaRoot.setPadding(new Insets(20));
         bienvenidaRoot.getChildren().addAll(bienvenidaLabel, opcionesLabel,
-                opcion1Button, opcion2Button, opcion3Button, salirButton);
+                opcion1Button, opcion2Button, opcion3Button, regresarButton);
         
         opcion1Button.setStyle("-fx-background-color: #3498DB;"); 
         opcion2Button.setStyle("-fx-background-color: #5DADE2;"); 
         opcion3Button.setStyle("-fx-background-color: #85C1E9;");
-        salirButton.setStyle("-fx-background-color: #3498DB;"); 
+        regresarButton.setStyle("-fx-background-color: #3498DB;");
+        bienvenidaRoot.setStyle("-fx-background-color: beige;");
+        
 
         // Configurar la escena y mostrar la nueva ventana
         Scene bienvenidaScene = new Scene(bienvenidaRoot, 600, 400);
-        ventanaBienvenida.setScene(bienvenidaScene);
-        ventanaBienvenida.show();
+        primaryStage.setScene(bienvenidaScene);
+        menuPrincipal = bienvenidaScene;
+        primaryStage.show();
     }
 
     private static void mostrarMensajeError(String titulo, String mensaje) {
@@ -405,115 +413,118 @@ public class PanelEmpleado extends Application
     }
 
 
-    private static void mostrarVentanaCompletarReservaAlquiler(Stage primaryStage, String usuario) {
-        Stage ventanaCompletarReserva = new Stage();
-        ventanaCompletarReserva.setTitle("Sistema de Alquiler de Vehículos - BIENVENIDO " + usuario);
-
-        Label completarReservaLabel = new Label("COMPLETAR ALQUILER DE RESERVA PREVIA");
+    private static void mostrarVentanaCompletarReservaAlquiler(Stage primaryStage) {
+// seguir aqui //
+        Label completarReservaLabel = new Label("Completar alquiler de reserva previa");
+        completarReservaLabel.setFont(Font.font("Arial", FontWeight.BOLD, 15));
         Label idReservaLabel = new Label("Ingrese ID de la reserva:");
         TextField idReservaTextField = new TextField();
         Button aceptarButton = new Button("Aceptar");
+        Button regresarButton = new Button("Regresar");
+        
+        aceptarButton.setStyle("-fx-background-color: #3498DB;"); 
+        regresarButton.setStyle("-fx-background-color: #5DADE2;");
 
         // Configurar evento para el botón "Aceptar"
         aceptarButton.setOnAction(event -> {
             String idReserva = idReservaTextField.getText();
-            //TODO 
             String[] reserva = Persistencia.obtenerReservaPorID(idReserva);
 
             if (reserva == null) {
                 mostrarMensajeError("Error", "No se encontró la reserva con el ID especificado.");
             } else {
-            	ventanaCompletarReserva.close();
-                mostrarVentanaSegurosDisponibles(ventanaCompletarReserva, usuario, reserva);
+                mostrarVentanaSegurosDisponibles(primaryStage, reserva);
             }
         });
+        
+        regresarButton.setOnAction(e -> primaryStage.setScene(menuPrincipal));
 
         // Crear diseño para la ventana de completar reserva
         VBox completarReservaRoot = new VBox(10);
+        completarReservaRoot.setStyle("-fx-background-color: beige;");
         completarReservaRoot.setPadding(new Insets(20));
         completarReservaRoot.getChildren().addAll(
-                completarReservaLabel, idReservaLabel, idReservaTextField, aceptarButton);
+                completarReservaLabel, idReservaLabel, idReservaTextField, aceptarButton, regresarButton);
 
         Scene completarReservaScene = new Scene(completarReservaRoot, 400, 200);
-        ventanaCompletarReserva.setScene(completarReservaScene);
-        ventanaCompletarReserva.show();
+        idAlquiler = completarReservaScene;
+        primaryStage.setScene(completarReservaScene);
+        primaryStage.show();
     }
 
 
 
-    private static void mostrarVentanaSegurosDisponibles(Stage ventanaPadre, String usuario, String[] reserva) {
-        Stage ventanaSegurosDisponibles = new Stage();
-        ventanaSegurosDisponibles.setTitle("Sistema de Alquiler de Vehículos - BIENVENIDO " + usuario);
+    private static void mostrarVentanaSegurosDisponibles(Stage primaryStage, String[] reserva) {
 
-        Label segurosDisponiblesLabel = new Label("SEGUROS DISPONIBLES");
+        Label segurosDisponiblesLabel = new Label("Seguros disponibles");
+        segurosDisponiblesLabel.setFont(Font.font("Arial", FontWeight.BOLD, 15));
         Label opcionesLabel = new Label("Escoja una de las siguientes opciones:");
 
         Button seguroObligatorioButton = new Button("Seguro obligatorio - $29,000 COP");
+        Label detallesObli = new Label("Descripción: Con este seguro se puede incurrir en un pago de un\r\n"
+        		+ "deducible para cubrir una parte de los perjuicios ocasionados\r\n"
+        		+ "en los casos de siniestros (totales o parciales), por responsabilidad civil\r\n"
+        		+ "extracontractual, por daños o por hurto del vehículo. Esto incluye también gastos administrativos.");
         Button seguroProteccionTotalButton = new Button("Seguro protección total - $61,086 COP");
-
+        Label detallesProt = new Label("Descripción: Este seguro es una cobertura adicional que se\r\n"
+        		+ "puede tomar de acuerdo con los riesgos que se deseen asumir, cubre el 100% de la\r\n"
+        		+ "pérdida total o parcial del vehículo y sus partes por daño o hurto, salvo por los casos de\r\n"
+        		+ "uso indebido. Al adquirir esta protección, te evitas el pago de la participación obligatoria en caso de siniestro.");
+        Button regresarButton = new Button("Regresar");
+        regresarButton.setStyle("-fx-background-color: #5DADE2;");
         // Configurar eventos para los botones de opciones de seguro
         seguroObligatorioButton.setOnAction(event -> {
-            try {
-				Persistencia.completarReservaConSeguro(reserva, "Seguro obligatorio");
-			} catch (CsvException e) {
-				e.printStackTrace();
-			}
-            ventanaSegurosDisponibles.close();
-            mostrarVentanaPreguntaConductorAdicional(ventanaSegurosDisponibles, usuario);
+            mostrarVentanaPreguntaConductorAdicional(primaryStage, "Seguro obligatorio", reserva);
         });
 
         seguroProteccionTotalButton.setOnAction(event -> {
-            try {
-				Persistencia.completarReservaConSeguro(reserva, "Seguro protección total");
-			} catch (CsvException e) {
-				e.printStackTrace();
-			}
-            ventanaSegurosDisponibles.close();
-            mostrarVentanaPreguntaConductorAdicional(ventanaSegurosDisponibles, usuario);
+            mostrarVentanaPreguntaConductorAdicional(primaryStage, "Seguro proteccion total", reserva);
         });
+        
+        regresarButton.setOnAction(e -> primaryStage.setScene(idAlquiler));
 
         // Crear diseño para la ventana de seguros disponibles
         VBox segurosDisponiblesRoot = new VBox(10);
+        segurosDisponiblesRoot.setStyle("-fx-background-color: beige;");
         segurosDisponiblesRoot.setPadding(new Insets(20));
         segurosDisponiblesRoot.getChildren().addAll(
-                segurosDisponiblesLabel, opcionesLabel, seguroObligatorioButton, seguroProteccionTotalButton);
+                segurosDisponiblesLabel, opcionesLabel, seguroObligatorioButton, detallesObli, 
+                seguroProteccionTotalButton, detallesProt, regresarButton);
         
         seguroObligatorioButton.setStyle("-fx-background-color: #3498DB;");
         seguroProteccionTotalButton.setStyle("-fx-background-color: #5DADE2;");
 
-        Scene segurosDisponiblesScene = new Scene(segurosDisponiblesRoot, 400, 200);
-        ventanaSegurosDisponibles.setScene(segurosDisponiblesScene);
-        ventanaSegurosDisponibles.show();
+        Scene segurosDisponiblesScene = new Scene(segurosDisponiblesRoot, 400, 400);
+        primaryStage.setScene(segurosDisponiblesScene);
+        primaryStage.show();
     }
-// TODO CÓDIGO PARA MANDAR A PERSISTENCIA
 
 
-    private static void mostrarVentanaPreguntaConductorAdicional(Stage ventanaPadre, String usuario) {
-        Stage ventanaPreguntaConductorAdicional = new Stage();
-        ventanaPreguntaConductorAdicional.setTitle("Sistema de Alquiler de Vehículos - BIENVENIDO " + usuario);
+    private static void mostrarVentanaPreguntaConductorAdicional(Stage primaryStage, String seguro, String[] reserva) {
 
         Label preguntaConductorAdicionalLabel = new Label("¿Desea agregar algún conductor adicional?");
+        preguntaConductorAdicionalLabel.setFont(Font.font("Arial", FontWeight.BOLD, 15));
+        
         Button siButton = new Button("Sí");
         Button noButton = new Button("No");
 
         // Configurar eventos para los botones de opciones
         siButton.setOnAction(e -> {
-        	ventanaPreguntaConductorAdicional.close();
-            mostrarVentanaConductorAdicional(ventanaPreguntaConductorAdicional, usuario, usuario);
+            mostrarVentanaConductorAdicional(primaryStage, reserva);
         });
 
         noButton.setOnAction(e -> {
         	
-            mostrarAnuncioConfirmacion("Cambios aplicados");
-            ventanaPreguntaConductorAdicional.close();
-            ventanaPadre.close();
-            mostrarVentanaBienvenida(ventanaPreguntaConductorAdicional, usuario);
-            //
+            mostrarAnuncioConfirmacion("El alquiler fue completado"); // hacer autenticacion tarjeta con otras ventanas//
+            completarAlquiler(reserva,seguro);
+            contador = 0;
+            primaryStage.setScene(menuPrincipal);
 
         });
 
         // Crear diseño para la ventana de pregunta por conductor adicional
         VBox preguntaConductorAdicionalRoot = new VBox(10);
+        preguntaConductorAdicionalRoot.setStyle("-fx-background-color: beige;");
         preguntaConductorAdicionalRoot.setPadding(new Insets(20));
         preguntaConductorAdicionalRoot.getChildren().addAll(
                 preguntaConductorAdicionalLabel, siButton, noButton);
@@ -522,15 +533,15 @@ public class PanelEmpleado extends Application
         noButton.setStyle("-fx-background-color: #5DADE2;");
 
         Scene preguntaConductorAdicionalScene = new Scene(preguntaConductorAdicionalRoot, 400, 200);
-        ventanaPreguntaConductorAdicional.setScene(preguntaConductorAdicionalScene);
-        ventanaPreguntaConductorAdicional.show();
+        conductores = preguntaConductorAdicionalScene;
+        primaryStage.setScene(preguntaConductorAdicionalScene);
+        primaryStage.show();
     }
 
-    private static void mostrarVentanaConductorAdicional(Stage ventanaPadre, String usuario, String idReserva) {
-        Stage ventanaConductorAdicional = new Stage();
-        ventanaConductorAdicional.setTitle("Sistema de Alquiler de Vehículos - BIENVENIDO " + usuario);
+    private static void mostrarVentanaConductorAdicional(Stage primaryStage, String[] Reserva) {
 
-        Label conductorAdicionalLabel = new Label("CONDUCTOR ADICIONAL");
+        Label conductorAdicionalLabel = new Label("Conductor adicional");
+        conductorAdicionalLabel.setFont(Font.font("Arial", FontWeight.BOLD, 15));
         Label nombreLabel = new Label("Nombre del conductor:");
         TextField nombreTextField = new TextField();
         Label fechaNacimientoLabel = new Label("Fecha de nacimiento:");
@@ -554,14 +565,16 @@ public class PanelEmpleado extends Application
             String paisExpedicionLicencia = paisExpedicionLicenciaTextField.getText();
             String fechaVencimientoLicencia = fechaVencimientoLicenciaDatePicker.getValue().toString();
 
-            Persistencia.guardarConductorAdicional(idReserva, nombre, fechaNacimiento, nacionalidad, numeroLicencia,
-                    paisExpedicionLicencia, fechaVencimientoLicencia);
+            ConductorAdicional.conductoresAgregados(Reserva[0],Reserva[2], nombre, fechaNacimiento, nacionalidad, numeroLicencia,
+            		paisExpedicionLicencia,fechaVencimientoLicencia);
+            contador++;
 
-            mostrarVentanaPreguntaConductorAdicional(ventanaConductorAdicional, usuario);
+            primaryStage.setScene(conductores);
         });
 
         // Crear diseño para la ventana de conductor adicional
         GridPane conductorAdicionalRoot = new GridPane();
+        conductorAdicionalRoot.setStyle("-fx-background-color: beige;");
         conductorAdicionalRoot.setPadding(new Insets(20));
         conductorAdicionalRoot.setVgap(10);
         conductorAdicionalRoot.setHgap(10);
@@ -580,20 +593,134 @@ public class PanelEmpleado extends Application
         conductorAdicionalRoot.add(fechaVencimientoLicenciaDatePicker, 1, 6);
         conductorAdicionalRoot.add(aceptarButton, 1, 7);
 
-        Scene conductorAdicionalScene = new Scene(conductorAdicionalRoot, 400, 300);
-        ventanaConductorAdicional.setScene(conductorAdicionalScene);
-        ventanaConductorAdicional.show();
+        Scene conductorAdicionalScene = new Scene(conductorAdicionalRoot, 400, 400);
+        primaryStage.setScene(conductorAdicionalScene);
+        primaryStage.show();
         aceptarButton.setStyle("-fx-background-color: #3498DB;");
     }
 
 
 
-	@Override
-	public void start(Stage arg0) throws Exception {
-		// TODO Auto-generated method stub
-		
+	
+	public static void completarAlquiler(String[] fila, String seguro_escogido) {
+
+            int indiceId = 0;
+            int indiceCategoria = 1;
+            int indiceUsuario = 2;
+            int indiceSedeRecogida = 3;
+            int indiceSedeEntrega = 4;
+            int indiceInicio = 5;
+            int indiceFinal = 6;
+            int indiceDias = 7;
+            int indiceCostoTotal = 8;
+            int indiceTreinta = 9;
+
+
+            
+            		String id = fila[indiceId];
+                	String categoria = fila[indiceCategoria];
+                	String usuario = fila[indiceUsuario];
+                	String recogida = fila[indiceSedeRecogida];
+                	String entrega = fila[indiceSedeEntrega];
+                	String inicio = fila[indiceInicio];
+                	String ffinal = fila[indiceFinal];
+                	String dias = fila[indiceDias];
+                	String costo = fila[indiceCostoTotal];
+                	String treinta = fila[indiceTreinta];
+
+
+                	List<String> escoger =Vehiculo.escogerCarro(categoria, inicio, ffinal);
+
+               	 	String categoriaEsc = escoger.get(0);
+               	 	String placa = escoger.get(1);
+
+
+                    List<String> seguro= escogerSeguro(seguro_escogido);
+                    int numeroAdicionales= contador;
+                  
+                    double valorTotal = ((Double.parseDouble(costo) - Double.parseDouble(treinta)) + (Double.parseDouble(seguro.get(1)) * Double.parseDouble(dias)));
+
+                    String rutaCompleta = "datos/alquileres.csv";
+                    boolean archivoExiste = new File(rutaCompleta).exists();
+
+                    List<String> nuevaFila = new ArrayList<>();
+
+                    nuevaFila.add(id);
+                    nuevaFila.add(usuario);
+                    nuevaFila.add(categoriaEsc);
+                    nuevaFila.add(placa);
+                    nuevaFila.add(recogida);
+                    nuevaFila.add(entrega);
+                    nuevaFila.add(inicio);
+                    nuevaFila.add(ffinal);
+                    nuevaFila.add(dias);
+                    nuevaFila.add(Double.toString(valorTotal));
+                    nuevaFila.add(Integer.toString(numeroAdicionales));
+                    nuevaFila.add(seguro.get(0));
+
+
+                    try (CSVWriter writer = new CSVWriter(new FileWriter(rutaCompleta, true))) {
+                        if (archivoExiste==false) {
+                            String[] encabezados = {"Id alquiler", "Usuario alquiler", "Categoria vehiculo",
+                           		 "Placa", "Sede de recogida", "Sede de entrega", "Fecha de inicio", 
+                           		 "Fecha finalizacion", "Dias en total", "Costo del excedente mas el seguro",
+                           		 "Conductores adicionales","Seguro seleccionado"};
+                            writer.writeNext(encabezados);
+                        }
+                        writer.writeNext(nuevaFila.toArray(new String[0]));
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+
+            
 	}
 
+	public static List<String> escogerSeguro (String seguro_escogido){
+		try (CSVReader reader = new CSVReader(new FileReader("datos/seguros.csv"))) {
+    		List<List<String>> listaDeListas = new ArrayList<>();
+            boolean primeraLinea = true;
+
+            while (true) {
+                String[] linea = reader.readNext();
+                if (linea == null) {
+                    break; // Fin del archivo
+                }
+
+                if (primeraLinea) {
+                    primeraLinea = false;
+                    continue;
+                }
+
+                List<String> lista = new ArrayList<>();
+                String nombre = linea[0];
+                String valor = linea[1];
+                String descripcion = linea[2];
+
+
+                lista.add(nombre);
+                lista.add(valor);
+                lista.add(descripcion);
+
+                listaDeListas.add(lista);
+            }
+                if (seguro_escogido.equals("Seguro obligatorio")) {
+                    return listaDeListas.get(0);
+
+                } else {
+                	return listaDeListas.get(1);
+                }
+            }
+
+         catch (IOException | CsvValidationException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+
+
+
+	}
 
 
 

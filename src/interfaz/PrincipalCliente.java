@@ -49,7 +49,6 @@ public class PrincipalCliente extends Application
 	    Button btnRegistrarse = new Button("Registrarse");
 	    Button btnIniciarSesion = new Button("Iniciar Sesión");
 	    Button btnVerDisponibilidadAnual = new Button("Disponibilidad anual");
-	    Button btnOpcionesAvanzadas = new Button("Opciones Avanzadas");
 	    Button btnSalir = new Button("Salir");
 	    labelResultado = new Label();
 
@@ -193,16 +192,16 @@ public class PrincipalCliente extends Application
 	    TextField numeroField = new TextField();
 	    Label lblCorreo = new Label("Correo electronico:");
 	    TextField correoField = new TextField();
-	    Label lblNacimiento = new Label("Fecha de nacimiento (yyyy-MM-dd):");
-	    TextField fechaNacimientoField = new TextField();
+	    Label lblNacimiento = new Label("Fecha de nacimiento:");
+	    DatePicker fechaNacimientoField = new DatePicker();
 	    Label lblNacionalidad = new Label("Nacionalidad:");
 	    TextField nacionalidadField = new TextField();
 	    Label lblNumeroLic = new Label("Numero licencia de conduccion:");
 	    TextField numeroLicConField = new TextField();
 	    Label lblPaisEx = new Label("Pais de expedicion de la licencia de conduccion:");
 	    TextField paisExLicField = new TextField();
-	    Label lblVencimiento = new Label("Fecha de vencimiento de la licencia de conduccion (yyyy-MM-dd):");
-	    TextField fechaVenLicField = new TextField();
+	    Label lblVencimiento = new Label("Fecha de vencimiento de la licencia de conduccion:");
+	    DatePicker fechaVenLicField = new DatePicker();
 	    Label lblTarjeta = new Label("Datos de la tarjeta de credito (numero-cvv-MM/yyyy):");
 	    TextField datosTarjetaField = new TextField();
 
@@ -213,11 +212,11 @@ public class PrincipalCliente extends Application
 	        String nombre = nombreField.getText();
 	        String numero = numeroField.getText();
 	        String correo = correoField.getText();
-	        String fechaNacimiento = fechaNacimientoField.getText();
+	        String fechaNacimiento = fechaNacimientoField.getValue().toString();
 	        String nacionalidad = nacionalidadField.getText();
 	        String numeroLicencia = numeroLicConField.getText();
 	        String expedicion = paisExLicField.getText();
-	        String vencimiento = fechaVenLicField.getText();
+	        String vencimiento = fechaVenLicField.getValue().toString();
 	        String tarjeta = datosTarjetaField.getText();
 	        sistema.agregarCliente(nombreUsuario, contrasena, nombre, numero, correo, fechaNacimiento, 
 	                nacionalidad, numeroLicencia, expedicion, vencimiento, tarjeta);
