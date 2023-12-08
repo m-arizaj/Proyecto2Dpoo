@@ -5,17 +5,24 @@ public class Transaccion
 	private String id;
     private String fecha;
     private String monto;
-    private String numeroCuenta;
+    private String cuenta;
+    private String nombre;
+    private String documento;
+    private String correo; 
     private String descripcion;
     private String medioPago;
     
     
-	public Transaccion(String id, String fecha, String monto, String numeroCuenta, String descripcion, String medioPago)
+	public Transaccion(String id, String fecha, String monto, String cuenta, String nombre, String documento,
+			String correo, String descripcion, String medioPago)
 	{
 		this.id = id;
 		this.fecha = fecha;
 		this.monto = monto;
-		this.numeroCuenta = numeroCuenta;
+		this.cuenta = cuenta;
+		this.nombre = nombre;
+		this.documento = documento;
+		this.correo = correo;
 		this.descripcion = descripcion;
 		this.medioPago = medioPago;
 	}
@@ -57,15 +64,51 @@ public class Transaccion
 	}
 
 
-	public String getNumeroCuenta()
+	public String getCuenta()
 	{
-		return numeroCuenta;
+		return cuenta;
 	}
 
 
-	public void setNumeroCuenta(String numeroCuenta)
+	public void setCuenta(String cuenta)
 	{
-		this.numeroCuenta = numeroCuenta;
+		this.cuenta = cuenta;
+	}
+
+
+	public String getNombre()
+	{
+		return nombre;
+	}
+
+
+	public void setNombre(String nombre)
+	{
+		this.nombre = nombre;
+	}
+
+
+	public String getDocumento()
+	{
+		return documento;
+	}
+
+
+	public void setDocumento(String documento)
+	{
+		this.documento = documento;
+	}
+
+
+	public String getCorreo()
+	{
+		return correo;
+	}
+
+
+	public void setCorreo(String correo)
+	{
+		this.correo = correo;
 	}
 
 
@@ -91,5 +134,8 @@ public class Transaccion
 	{
 		this.medioPago = medioPago;
 	}
+    
+    
+	
 }
 

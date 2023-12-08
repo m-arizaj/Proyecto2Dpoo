@@ -29,6 +29,8 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 
 public class PanelEmpleado 
 {
@@ -514,11 +516,7 @@ public class PanelEmpleado
         });
 
         noButton.setOnAction(e -> {
-        	
-            mostrarAnuncioConfirmacion("El alquiler fue completado"); // hacer autenticacion tarjeta con otras ventanas//
-            completarAlquiler(reserva,seguro);
-            contador = 0;
-            primaryStage.setScene(menuPrincipal);
+        	mostrarVentanaPasarelas(primaryStage, seguro, reserva);
 
         });
 
@@ -598,9 +596,95 @@ public class PanelEmpleado
         primaryStage.show();
         aceptarButton.setStyle("-fx-background-color: #3498DB;");
     }
+    
+    private static void mostrarVentanaPasarelas(Stage primaryStage, String seguro, String[] reserva) {
+    	Label preguntaLabel = new Label("Seleccione su plataforma preferida para realizar el pago");
+        preguntaLabel.setFont(Font.font("Arial", FontWeight.BOLD, 15));
+        
+        ObservableList<String> opciones = FXCollections.observableArrayList("PayPal", "PayU");
+        
+        Button continuar = new Button("Continuar");
 
+        ChoiceBox<String> choiceBox = new ChoiceBox<>(opciones);
+        
+        continuar.setOnAction(e -> {
+        	
+//        	VentanasPayPal pasarela = new VentanasPayPal();
+        	String seleccion = choiceBox.getValue();
+        	mostrarVentanaPago(primaryStage, seguro, reserva, seleccion);
 
+        });
+        
+        VBox preguntaAdicionalRoot = new VBox(10);
+        preguntaAdicionalRoot.setStyle("-fx-background-color: beige;");
+        preguntaAdicionalRoot.setPadding(new Insets(20));
+        preguntaAdicionalRoot.getChildren().addAll(preguntaLabel,choiceBox, continuar);
+        
+        continuar.setStyle("-fx-background-color: #3498DB;");
+       
+        Scene preguntaConductorAdicionalScene = new Scene(preguntaAdicionalRoot, 400, 200);
+        primaryStage.setScene(preguntaConductorAdicionalScene);
+        primaryStage.show();
+        
+    }
+    
+    private static void mostrarVentanaPago(Stage primaryStage, String seguro, String[] reserva, String Pasarela) {
+    	Label preguntaLabel = new Label("Se esta redirigiendo su solicitud de pago a la plataforma " + Pasarela);
+        preguntaLabel.setFont(Font.font("Arial", FontWeight.BOLD, 15));
+        Label lblSubtitulo = new Label("Presione aceptar para continuar");
+        lblSubtitulo.setFont(Font.font("Arial", 15));
+        Button continuar = new Button("Aceptar");
+        
+        continuar.setOnAction(e -> {
+        	if (Pasarela.equals("PayPal")){
+        	VentanasPayPal pasarela = new VentanasPayPal();
+        	pasarela.mostrarMenuPago(primaryStage, seguro, reserva);
+        	}
+        	else {
+        		// poner payU
+        	}
 
+        });
+        
+        VBox preguntaAdicionalRoot = new VBox(10);
+        preguntaAdicionalRoot.setStyle("-fx-background-color: beige;");
+        preguntaAdicionalRoot.setPadding(new Insets(20));
+        preguntaAdicionalRoot.getChildren().addAll(preguntaLabel,lblSubtitulo, continuar);
+        
+        continuar.setStyle("-fx-background-color: #3498DB;");
+       
+        Scene preguntaConductorAdicionalScene = new Scene(preguntaAdicionalRoot, 400, 200);
+        primaryStage.setScene(preguntaConductorAdicionalScene);
+        primaryStage.show();
+        
+    }
+
+    public static void mostrarVentanaExito(Stage primaryStage, String seguro, String[] reserva) {
+    	Label preguntaLabel = new Label("El alquiler fue completado y facturado");
+        preguntaLabel.setFont(Font.font("Arial", FontWeight.BOLD, 15));
+        Label lblSubtitulo = new Label("Presione aceptar para finalizar");
+        lblSubtitulo.setFont(Font.font("Arial", 15));
+        Button continuar = new Button("Aceptar");
+        
+        
+        continuar.setOnAction(e -> { 
+            completarAlquiler(reserva,seguro);
+            contador = 0;
+            primaryStage.setScene(menuPrincipal);
+
+        });
+        
+        VBox preguntaAdicionalRoot = new VBox(10);
+        preguntaAdicionalRoot.setStyle("-fx-background-color: beige;");
+        preguntaAdicionalRoot.setPadding(new Insets(20));
+        preguntaAdicionalRoot.getChildren().addAll(preguntaLabel,lblSubtitulo, continuar);
+        
+        continuar.setStyle("-fx-background-color: #3498DB;");
+       
+        Scene preguntaConductorAdicionalScene = new Scene(preguntaAdicionalRoot, 400, 200);
+        primaryStage.setScene(preguntaConductorAdicionalScene);
+        primaryStage.show();
+    }
 	
 	public static void completarAlquiler(String[] fila, String seguro_escogido) {
 
