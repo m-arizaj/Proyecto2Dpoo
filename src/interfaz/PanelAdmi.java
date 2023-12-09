@@ -183,6 +183,9 @@ public class PanelAdmi {
             Label labelCategoria = new Label("Categoría:");
             TextField txtCategoria = new TextField();
 
+            Label labelTipoVehiculo = new Label("Tipo de Vehículo:");
+            TextField txtTipoVehiculo = new TextField(); // Agregar el campo para el tipo de vehículo
+
             Button btnAgregar = new Button("Agregar");
             Button btnRegresar = new Button("Regresar");
 
@@ -194,8 +197,9 @@ public class PanelAdmi {
                 String color = txtColor.getText();
                 String transmision = txtTransmision.getText();
                 String categoria = txtCategoria.getText();
+                String tipoVehiculo = txtTipoVehiculo.getText(); // Obtener el tipo de vehículo
 
-                sistema.agregarVehiculo(placa, marca, modelo, color, transmision, categoria,null,null,null,null,null);
+                sistema.agregarVehiculo(placa, marca, modelo, color, transmision, categoria, null, null, null, null, null, tipoVehiculo);
 
                 mostrarMensajeExito("El vehículo se añadió con éxito");
 
@@ -218,10 +222,12 @@ public class PanelAdmi {
             layout.addRow(3, labelColor, txtColor);
             layout.addRow(4, labelTransmision, txtTransmision);
             layout.addRow(5, labelCategoria, txtCategoria);
-            layout.addRow(6, btnAgregar, btnRegresar);
+            layout.addRow(6, labelTipoVehiculo, txtTipoVehiculo); // Nueva fila para el tipo de vehículo
+            layout.addRow(7, btnAgregar, btnRegresar);
 
             // Crear la escena
-            Scene scene = new Scene(layout, 400, 300);
+            Scene scene = new Scene(layout, 400, 350); // Ajustar el alto de la ventana
+
             stage.setScene(scene);
 
             // Mostrar la ventana
