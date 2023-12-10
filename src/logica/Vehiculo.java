@@ -25,11 +25,10 @@ public class Vehiculo {
     private String pasajeros;
     private String tarifa;
     private String observaciones;
-    private String ubicacion;
-    private String tipoVehiculo; // Nuevo atributo agregado
+    private String tipoVehiculo;
 
     public Vehiculo(String placa, String marca, String modelo, String color, String transmision, String categoria, String estado, String pasajeros,
-                    String tarifa, String observaciones, String ubicacion, String tipoVehiculo) {
+                    String tarifa, String observaciones, String tipoVehiculo) {
         this.placa = placa;
         this.marca = marca;
         this.modelo = modelo;
@@ -40,8 +39,7 @@ public class Vehiculo {
         this.pasajeros = pasajeros;
         this.tarifa = tarifa;
         this.observaciones = observaciones;
-        this.ubicacion = ubicacion;
-        this.tipoVehiculo = tipoVehiculo; // Inicializar el nuevo atributo
+        this.tipoVehiculo = tipoVehiculo;
     }
 
     public String getPlaca() {
@@ -124,21 +122,15 @@ public class Vehiculo {
         this.observaciones = observaciones;
     }
 
-    public String getUbicacion() {
-        return ubicacion;
-    }
-
-    public void setUbicacion(String ubicacion) {
-        this.ubicacion = ubicacion;
-    }
-
     public String getTipoVehiculo() {
         return tipoVehiculo;
     }
 
-    public void setTipoVehiculo(String tipoVehiculo) {
+    public void setTipoVehiculo(String setTipoVehiculo) {
         this.tipoVehiculo = tipoVehiculo;
     }
+
+
 
     // METODOS
 

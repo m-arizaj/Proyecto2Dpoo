@@ -154,11 +154,10 @@ public class Persistencia {
 	            String cantidadPasajeros = linea[7];
 	            String tarifaDiaria = linea[8];
 	            String observaciones = linea[9];
-	            String ubicacion = linea[10];
-	            String tipoVehiculo = linea[11]; // Nueva columna
+	            String tipoVehiculo = linea[10];
 
 	            sistema.agregarVehiculo(placa, marca, modelo, color, transmision, categoria, estado, cantidadPasajeros,
-	                    tarifaDiaria, observaciones, ubicacion, tipoVehiculo);
+	                    tarifaDiaria, observaciones, tipoVehiculo);
 	        }
 	    } catch (IOException | CsvValidationException e) {
 	        e.printStackTrace();
@@ -309,7 +308,7 @@ public class Persistencia {
 
 
 	        String[] header = {"Placa", "Marca", "Modelo", "Color", "Transmisión", "Categoría", "Estado", "Pasajeros", "Tarifa", 
-	        		"Observaciones", "Ubicacion"};
+	        		"Observaciones", "tipoVehiculo"};
 	        csvWriter.writeNext(header);
 
 
@@ -325,7 +324,7 @@ public class Persistencia {
 	                vehiculo.getPasajeros(),
 	                vehiculo.getTarifa(),
 	                vehiculo.getObservaciones(),
-	                vehiculo.getUbicacion()
+	                vehiculo.getTipoVehiculo()
 	            };
 	            csvWriter.writeNext(data);
 	        }

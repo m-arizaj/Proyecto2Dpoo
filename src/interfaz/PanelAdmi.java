@@ -199,7 +199,7 @@ public class PanelAdmi {
                 String categoria = txtCategoria.getText();
                 String tipoVehiculo = txtTipoVehiculo.getText(); // Obtener el tipo de vehículo
 
-                sistema.agregarVehiculo(placa, marca, modelo, color, transmision, categoria, null, null, null, null, null, tipoVehiculo);
+                sistema.agregarVehiculo(placa, marca, modelo, color, transmision, categoria, null, null, null, null, tipoVehiculo);
 
                 mostrarMensajeExito("El vehículo se añadió con éxito");
 
