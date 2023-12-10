@@ -1,0 +1,11 @@
+Alquiler de vehiculos
+Id factura: 719cc66b-54ae-465d-889b-b1e67e03e4fa
+Fecha: 09/12/2023 22:32
+Monto: 0.0
+Cuenta: Mike
+Nombre completo: Andrea Suarez
+Documento: 79568387
+Correo: andy@gmail.com
+Descripcion: Alquiler de vehiculo de categoria LY -Electrico automatico desde 2024-01-20 12:00 hasta 2024-01-24 12:00
+Medio de pago: Tarjeta terminada en 210
+----Cuenta cerrada----

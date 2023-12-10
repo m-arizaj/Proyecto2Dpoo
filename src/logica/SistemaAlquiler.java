@@ -245,9 +245,9 @@ public class SistemaAlquiler {
 	public void agregarCliente(String nombreUsuario, String contrasena, String nombre, String numeroTelefonico,String correo,
     		String fechaNacimiento, String nacionalidad,
             String numeroLicencia, String paisExpedicionLicencia,
-            String fechaVencimientoLicencia, String datosTarjetaCredito) {
+            String fechaVencimientoLicencia) {
 		
-		Cliente cliente = new Cliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia, datosTarjetaCredito);
+		Cliente cliente = new Cliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia);
         clientes.add(cliente);
 	}
 

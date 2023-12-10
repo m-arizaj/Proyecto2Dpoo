@@ -22,16 +22,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 import logica.*;
 
-public class VentanasPayPal
+public class VentanasPayU
 {
 	
 	public void mostrarMenuPago(Stage primaryStage, String seguro, String[] reserva, String tipo, Scene menu) {
-		Image logoPayPal = new Image("file:datos/paypalLogo.png");  // Reemplaza con la ruta correcta de tu logo
+		Image logoPayPal = new Image("file:datos/PayU.png");  // Reemplaza con la ruta correcta de tu logo
         ImageView imageView = new ImageView(logoPayPal);
         double nuevoTamano = 150; // Ajusta el tamaño según tus necesidades
         imageView.setFitWidth(nuevoTamano);
         imageView.setFitHeight(nuevoTamano);
-    	Label lblTitulo = new Label("Realizar pago");
+        Label lblTitulo = new Label("Realizar pago");
         lblTitulo.setFont(Font.font("PayPal Sans",FontWeight.BOLD, 18));
         LocalDateTime fechaHoraActual = LocalDateTime.now();
         String fechaHoraComoString = fechaHoraActual.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm"));
@@ -95,7 +95,7 @@ public class VentanasPayPal
         
         });
         
-        btnAceptar.setStyle("-fx-background-color: #5DADE2;");
+        btnAceptar.setStyle("-fx-background-color: #38F438;");
         
         GridPane gridPane = new GridPane();
         gridPane.setAlignment(Pos.CENTER);
@@ -177,7 +177,7 @@ public class VentanasPayPal
         preguntaAdicionalRoot.setPadding(new Insets(20));
         preguntaAdicionalRoot.getChildren().addAll(preguntaLabel,lblSubtitulo, continuar);
         
-        continuar.setStyle("-fx-background-color: #5DADE2;");
+        continuar.setStyle("-fx-background-color: #38F438;");
        
         Scene preguntaConductorAdicionalScene = new Scene(preguntaAdicionalRoot, 600, 200);
         primaryStage.setScene(preguntaConductorAdicionalScene);

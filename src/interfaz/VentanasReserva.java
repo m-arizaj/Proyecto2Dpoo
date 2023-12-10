@@ -1,5 +1,9 @@
 package interfaz;
 
+import java.io.IOException;
+
+import com.opencsv.exceptions.CsvValidationException;
+
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -13,7 +17,9 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.FontPosture;
 import javafx.stage.Stage;
-import logica.SistemaAlquiler;
+import logica.*;
+import persistencia.*;
+import java.util.List;
 
 public class VentanasReserva
 {	
@@ -24,7 +30,7 @@ public class VentanasReserva
 	public void mostrarMenuReservas(SistemaAlquiler sistema, Stage primaryStage, String nombre, Scene escenaPrincipal) {
     	Label lblTitulo = new Label("Menú principal");
         lblTitulo.setFont(Font.font("Arial", FontWeight.BOLD, 18));
-        Label lblSubtitulo = new Label("Bienvenido, "+ nombre);
+        Label lblSubtitulo = new Label("Bienvenid@, "+ nombre);
         lblSubtitulo.setFont(Font.font("Arial", FontWeight.BOLD, 15));
     	Button btnReserva = new Button("Realizar una reserva");
         btnReserva.setOnAction(e -> Reservas(sistema,primaryStage, nombre));
@@ -160,7 +166,7 @@ public class VentanasReserva
     }
     
     public void ReservasSede(SistemaAlquiler sistema, Stage primaryStage, String nombre, String categoriaSelecc, 
-    		String fechaInicio, String fechaFin) {
+    		String fechaInicio, String fechaFin)  {
     	GridPane gridPane = new GridPane();
         gridPane.setPadding(new Insets(10));
         gridPane.setHgap(10);
@@ -201,7 +207,7 @@ public class VentanasReserva
         TextField entregarField = new TextField();
         gridPane.add(entregarField, 1, 9);
         
-        Label info2Label = new Label("Al presionar aceptar se completa la reserva");
+        Label info2Label = new Label("Al presionar aceptar continua el proceso de pago de la reserva");
         info2Label.setFont(Font.font("Arial", FontPosture.ITALIC, 15));
         gridPane.add(info2Label, 0, 10, 2, 1);
         
@@ -217,8 +223,20 @@ public class VentanasReserva
             String recoger = recogerField.getText();
             String entregar = entregarField.getText();
             sistema.realizarReserva(nombre,categoriaSelecc,fechaInicio,fechaFin,recoger,entregar);
-            ReservaCompleta(sistema,primaryStage);
+            try {
+            Persistencia.leerReservas(sistema,"datos/reservas.csv");}
+            catch (CsvValidationException ex) {
+    	        ex.printStackTrace();
+    	    }
+            List<Reserva> list = (sistema.getReservas());
+            int lon = (sistema.getReservas().size());
+            Reserva selec = list.get(lon - 1);
+            String[] reser = {selec.getId(),selec.getCategoria(),selec.getUsuarioCliente(), selec.getSedeRecogida(), 
+            		selec.getSedeEntrega(), selec.getFechaRecogida(),selec.getFechaEntrega(),selec.getDiasFacturados(),
+            		selec.getCostoParcial(),selec.getCostoTreinta()};
+            PanelEmpleado.mostrarVentanaPasarelas(primaryStage, ".", reser, "reserva", escenaMenuCliente);
             
+//            ReservaCompleta(sistema,primaryStage);
         });
         
         gridPane.setStyle("-fx-background-color: beige;");

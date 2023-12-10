@@ -10,11 +10,11 @@ public class Transaccion
     private String documento;
     private String correo; 
     private String descripcion;
-    private String medioPago;
+    private String[] medioPago;
     
     
 	public Transaccion(String id, String fecha, String monto, String cuenta, String nombre, String documento,
-			String correo, String descripcion, String medioPago)
+			String correo, String descripcion, String[] medioPago)
 	{
 		this.id = id;
 		this.fecha = fecha;
@@ -124,13 +124,13 @@ public class Transaccion
 	}
 
 
-	public String getMedioPago()
+	public String[] getMedioPago()
 	{
 		return medioPago;
 	}
 
 
-	public void setMedioPago(String medioPago)
+	public void setMedioPago(String[] medioPago)
 	{
 		this.medioPago = medioPago;
 	}
