@@ -1,161 +1,161 @@
-"Placa","Marca","Modelo","Color ","Transmision","Categoria","Estado","Cantidad pasajeros","Tarifa diaria","Observaciones ","Ubicaci�n"
-"ABC123","Kia","Picanto 1.0","Blanco","Mecanica","C -Economico con aire","En Mantenimiento","5","152250","2023-12-12 - Problema en las llantas","Nuestro Bogota"
-"XYZ456","Kia","Picanto 1.0","Blanco","Mecanica","C -Economico con aire","Alquilado","5","152250","Alquilado desde 2023-11-13 19:40 hasta 2023-11-15 19:40","Fuera de las sedes"
-"DEF789","Kia","Picanto 1.0","Blanco","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota"
-"GHI101","Kia","Picanto 1.0","Blanco","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota"
-"JKL202","Fiat","Mobi 1.0","Blanco","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota"
-"MNO303","Fiat","Mobi 1.0","Blanco","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota"
-"PQR404","Fiat","Mobi 1.0","Blanco","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota"
-"STU505","Suzuki","S-Presso 1.0","Naranja","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota"
-"VWX606","Suzuki","S-Presso 1.0","Naranja","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota"
-"YZA707","Suzuki","S-Presso 1.0","Naranja","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota"
-"FAA456","Suzuki","Swift Dzire 1.2","Azul","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota"
-"OUT894","Suzuki","Swift Dzire 1.2","Azul","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota"
-"DHD657","Suzuki","Swift Dzire 1.2","Azul","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota"
-"FDS357","Suzuki","Swift Dzire 1.2","Azul","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota"
-"YWR447","Renault","Logan 1.6","Gris","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota"
-"DXR566","Renault","Logan 1.6","Gris","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota"
-"GAY654","Renault","Logan 1.6","Gris","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota"
-"RES466","Volkswagen","Gol Trendline 1.6","Plateado","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota"
-"DGF798","Volkswagen","Gol Trendline 1.6","Plateado","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota"
-"DGE899","Volkswagen","Gol Trendline 1.6","Plateado","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota"
-"TFY756","Suzuki","Swift Dzire 1.2","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota"
-"DGE323","Suzuki","Swift Dzire 1.2","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota"
-"FDS595","Suzuki","Swift Dzire 1.2","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota"
-"GDF520","Suzuki","Swift Dzire 1.2","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota"
-"FSD665","Hyundai","Accent Advance 1.6","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota"
-"DDS566","Hyundai","Accent Advance 1.6","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota"
-"FSR987","Hyundai","Accent Advance 1.6","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota"
-"TSD456","Renault","Logan Dynamique 1.6","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota"
-"POL675","Renault","Logan Dynamique 1.6","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota"
-"IOB654","Renault","Logan Dynamique 1.6","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota"
-"XDS789","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota"
-"KOS987","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota"
-"TYR798","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota"
-"FAF185","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota"
-"FSE456","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota"
-"FRE670","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota"
-"SDF595","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota"
-"NDD498","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota"
-"FAD321","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota"
-"HSE652","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota"
-"QAF645","Fiat","Pulse 1.3","Negro","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota"
-"GSF201","Fiat","Pulse 1.3","Negro","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota"
-"LRT014","Fiat","Pulse 1.3","Negro","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota"
-"BCV458","Fiat","Pulse 1.3","Negro","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota"
-"EFC014","Renault","Duster 1.6","Cafe","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota"
-"FSR987","Renault","Duster 1.6","Cafe","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota"
-"GEC799","Renault","Duster 1.6","Cafe","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota"
-"TSE789","Suzuki","Vitara 1.6","Beige","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota"
-"FER564","Suzuki","Vitara 1.6","Beige","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota"
-"FSD104","Suzuki","Vitara 1.6","Beige","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota"
-"GSX025","Opel ","Crossland 1.2","Plateado","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota"
-"GLO987","Opel ","Crossland 1.2","Plateado","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota"
-"TRE369","Opel ","Crossland 1.2","Plateado","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota"
-"CSE015","Opel ","Crossland 1.2","Plateado","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota"
-"AFE312","Hyundai","Creta 1.6","Blanco","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota"
-"SXY518","Hyundai","Creta 1.6","Blanco","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota"
-"ELV127","Hyundai","Creta 1.6","Blanco","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota"
-"BTR197","Kia","Sonet 1.5","Negro","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota"
-"GER357","Kia","Sonet 1.5","Negro","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota"
-"LQP917","Kia","Sonet 1.5","Negro","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota"
-"QWQ024","Renault","Duster 1.3","Cafe","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota"
-"NYR731","Renault","Duster 1.3","Cafe","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota"
-"FRE781","Renault","Duster 1.3","Cafe","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota"
-"WAQ741","Renault","Duster 1.3","Cafe","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota"
-"FWA097","Suzuki","Vitara 1.6","Blanco","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota"
-"FEW111","Suzuki","Vitara 1.6","Blanco","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota"
-"VFS444","Suzuki","Vitara 1.6","Blanco","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota"
-"LEO789","Renault","Duster 2.0","Blanco","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota"
-"LES961","Renault","Duster 2.0","Blanco","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota"
-"AIR911","Renault","Duster 2.0","Blanco","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota"
-"BIN143","Mitsubishi","Montero Sport GLS 3.0","Blanco","Automatica","GR -SUV elite","Alquilado","7","488436","Alquilado desde 2023-10-17 13:00 hasta 2023-10-20 18:00","Fuera de las sedes"
-"FRA974","Mitsubishi","Montero Sport GLS 3.0","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota"
-"INT327","Mitsubishi","Montero Sport GLS 3.0","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota"
-"LOS457","Mitsubishi","Montero Sport GLS 3.0","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota"
-"DEW189","Mitsubishi","Montero Sport GLS 3.0","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota"
-"CSD982","Chevrolet","Trailblazer LTZ 3.6","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota"
-"CSS367","Chevrolet","Trailblazer LTZ 3.6","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota"
-"CRE322","Chevrolet","Trailblazer LTZ 3.6","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota"
-"AAA111","Chevrolet","Trailblazer LTZ 3.6","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota"
-"EDS976","Chevrolet","Trailblazer LTZ 3.6","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota"
-"SER761","Suzuki","Vitara 2.4","Beige","Automatica","GX -SUV automatico ","Disponible","5","400000",".","Aeropuerto El Dorado"
-"LPW357","Suzuki","Vitara 2.4","Beige","Automatica","GX -SUV automatico ","Disponible","5","400000",".","Aeropuerto El Dorado"
-"DWA498","Suzuki","Vitara 2.4","Beige","Automatica","GX -SUV automatico ","Disponible","5","400000",".","Aeropuerto El Dorado"
-"LLO789","Suzuki","Vitara 2.4","Beige","Automatica","GX -SUV automatico ","Disponible","5","400000",".","Aeropuerto El Dorado"
-"FER978","Renault","Captur 2.0","Negro","Automatica","GX -SUV automatico ","Disponible","5","400000",".","Aeropuerto El Dorado"
-"MWE345","Renault","Captur 2.0","Negro","Automatica","GX -SUV automatico ","Disponible","5","400000",".","Aeropuerto El Dorado"
-"FRW479","Renault","Captur 2.0","Negro","Automatica","GX -SUV automatico ","Disponible","5","400000",".","Aeropuerto El Dorado"
-"AQW301","Chevrolet","Tracker 1.8","Blanco","Automatica","GX -SUV automatico ","Disponible","5","400000",".","Aeropuerto El Dorado"
-"PIE897","Chevrolet","Tracker 1.8","Blanco","Automatica","GX -SUV automatico ","Disponible","5","400000",".","Aeropuerto El Dorado"
-"VWA310","Chevrolet","Tracker 1.8","Blanco","Automatica","GX -SUV automatico ","Disponible","5","400000",".","Aeropuerto El Dorado"
-"QOP931","Renault","Sandero Stepway 1.6","Cafe","Automatica","H -Ejecutivo automatico","Disponible","5","235545",".","Aeropuerto El Dorado"
-"DWQ014","Renault","Sandero Stepway 1.6","Cafe","Automatica","H -Ejecutivo automatico","Disponible","5","235545",".","Aeropuerto El Dorado"
-"LOP978","Renault","Sandero Stepway 1.6","Cafe","Automatica","H -Ejecutivo automatico","Disponible","5","235545",".","Aeropuerto El Dorado"
-"DER364","Renault","Sandero Stepway 1.6","Cafe","Automatica","H -Ejecutivo automatico","Disponible","5","235545",".","Aeropuerto El Dorado"
-"PLO781","Renault","Sandero Stepway 1.6","Cafe","Automatica","H -Ejecutivo automatico","Disponible","5","235545",".","Aeropuerto El Dorado"
-"AWS815","Hyundai","Accent Premium 1.6","Blanco","Automatica","H -Ejecutivo automatico","Disponible","5","235545",".","Aeropuerto El Dorado"
-"MUS614","Hyundai","Accent Premium 1.6","Blanco","Automatica","H -Ejecutivo automatico","Disponible","5","235545",".","Aeropuerto El Dorado"
-"GWA976","Hyundai","Accent Premium 1.6","Blanco","Automatica","H -Ejecutivo automatico","Disponible","5","235545",".","Aeropuerto El Dorado"
-"XXC321","Hyundai","Accent Premium 1.6","Blanco","Automatica","H -Ejecutivo automatico","Disponible","5","235545",".","Aeropuerto El Dorado"
-"FWR986","Hyundai","Accent Premium 1.6","Blanco","Automatica","H -Ejecutivo automatico","Disponible","5","235545",".","Aeropuerto El Dorado"
-"VFS258","Volkswagen","Jetta R-Line 1.4","Plateado","Automatica","L -Premium automatico","Alquilado","5","285545","Alquilado desde 2023-10-30 12:13 hasta 2023-11-30 12:13","Fuera de las sedes"
-"SFE147","Volkswagen","Jetta R-Line 1.4","Plateado","Automatica","L -Premium automatico","Disponible","5","285545",".","Aeropuerto El Dorado"
-"VSD631","Volkswagen","Jetta R-Line 1.4","Plateado","Automatica","L -Premium automatico","Disponible","5","285545",".","Aeropuerto El Dorado"
-"LOA617","Volkswagen","Jetta R-Line 1.4","Plateado","Automatica","L -Premium automatico","Disponible","5","285545",".","Aeropuerto El Dorado"
-"LUZ666","Volkswagen","Jetta R-Line 1.4","Plateado","Automatica","L -Premium automatico","Disponible","5","285545",".","Aeropuerto El Dorado"
-"CDA904","Volkswagen","Jetta R-Line 1.4","Plateado","Automatica","L -Premium automatico","Disponible","5","285545",".","Aeropuerto El Dorado"
-"GAF678","Volkswagen","Jetta R-Line 1.4","Plateado","Automatica","L -Premium automatico","Disponible","5","285545",".","Aeropuerto El Dorado"
-"LON456","Volkswagen","Jetta R-Line 1.4","Plateado","Automatica","L -Premium automatico","Disponible","5","285545",".","Aeropuerto El Dorado"
-"CAS370","Volkswagen","Jetta R-Line 1.4","Plateado","Automatica","L -Premium automatico","Disponible","5","285545",".","Aeropuerto El Dorado"
-"VPO609","Volkswagen","Jetta R-Line 1.4","Plateado","Automatica","L -Premium automatico","Disponible","5","285545",".","Aeropuerto El Dorado"
-"FSD013","Renault","Koleos 2.5","Blanco","Mecanica","LE -SUV especial","Alquilado","5","292545","Alquilado desde 2023-12-24 12:00 hasta 2023-12-31 12:00","Fuera de las sedes"
-"LER420","Renault","Koleos 2.5","Blanco","Mecanica","LE -SUV especial","Alquilado","5","292545","Alquilado desde 2023-12-24 12:00 hasta 2023-12-31 12:00","Fuera de las sedes"
-"WEE420","Renault","Koleos 2.5","Blanco","Mecanica","LE -SUV especial","Alquilado","5","292545","Alquilado desde 2023-12-24 12:00 hasta 2023-12-31 12:00","Fuera de las sedes"
-"LRF201","Renault","Koleos 2.5","Blanco","Mecanica","LE -SUV especial","Disponible","5","292545",".","Aeropuerto El Dorado"
-"LTE978","Renault","Koleos 2.5","Blanco","Mecanica","LE -SUV especial","Disponible","5","292545",".","Aeropuerto El Dorado"
-"KRE127","Nissan","Qashqai 2.0","Blanco","Mecanica","LE -SUV especial","Disponible","5","292545",".","Aeropuerto El Dorado"
-"MER978","Nissan","Qashqai 2.0","Blanco","Mecanica","LE -SUV especial","Disponible","5","292545",".","Aeropuerto El Dorado"
-"HER023","Nissan","Qashqai 2.0","Blanco","Mecanica","LE -SUV especial","Disponible","5","292545",".","Aeropuerto El Dorado"
-"WQE961","Nissan","Qashqai 2.0","Blanco","Mecanica","LE -SUV especial","Disponible","5","292545",".","Aeropuerto El Dorado"
-"FRE032","Nissan","Qashqai 2.0","Blanco","Mecanica","LE -SUV especial","Disponible","5","292545",".","Aeropuerto El Dorado"
-"TWQ339","Toyota","Corolla Xei 1.8","Blanco","Automatica","LP -Sedan prime","Disponible","5","256577",".","Aeropuerto El Dorado"
-"FWQ986","Toyota","Corolla Xei 1.8","Blanco","Automatica","LP -Sedan prime","Disponible","5","256577",".","Aeropuerto El Dorado"
-"PDW565","Toyota","Corolla Xei 1.8","Blanco","Automatica","LP -Sedan prime","Disponible","5","256577",".","Aeropuerto El Dorado"
-"GRE873","Toyota","Corolla Xei 1.8","Blanco","Automatica","LP -Sedan prime","Disponible","5","256577",".","Aeropuerto El Dorado"
-"WER978","Toyota","Corolla Xei 1.8","Blanco","Automatica","LP -Sedan prime","Disponible","5","256577",".","Aeropuerto El Dorado"
-"RED456","Toyota","Corolla Xei 1.8","Blanco","Automatica","LP -Sedan prime","Disponible","5","256577",".","Aeropuerto El Dorado"
-"FWE783","Toyota","Corolla Xei 1.8","Blanco","Automatica","LP -Sedan prime","Disponible","5","256577",".","Aeropuerto El Dorado"
-"CSX000","Toyota","Corolla Xei 1.8","Blanco","Automatica","LP -Sedan prime","Disponible","5","256577",".","Aeropuerto El Dorado"
-"DSE961","Toyota","Corolla Xei 1.8","Blanco","Automatica","LP -Sedan prime","Disponible","5","256577",".","Aeropuerto El Dorado"
-"KRO631","Toyota","Corolla Xei 1.8","Blanco","Automatica","LP -Sedan prime","Disponible","5","256577",".","Aeropuerto El Dorado"
-"GLI679","Changan","E-star Electrico","Blanco","Automatica","LY -Electrico automatico","Alquilado","5","250000","Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00","Fuera de las sedes"
-"FOP346","Changan","E-star Electrico","Blanco","Automatica","LY -Electrico automatico","Alquilado","5","250000","Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00","Fuera de las sedes"
-"DAE763","Changan","E-star Electrico","Blanco","Automatica","LY -Electrico automatico","Alquilado","5","250000","Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00","Fuera de las sedes"
-"GER789","Changan","E-star Electrico","Blanco","Automatica","LY -Electrico automatico","Alquilado","5","250000","Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00","Fuera de las sedes"
-"FWE645","Changan","E-star Electrico","Blanco","Automatica","LY -Electrico automatico","Alquilado","5","250000","Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00","Fuera de las sedes"
-"BER301","Changan","E-star Electrico","Blanco","Automatica","LY -Electrico automatico","Disponible","5","250000",".","Aeropuerto El Dorado"
-"LOW679","Changan","E-star Electrico","Blanco","Automatica","LY -Electrico automatico","Disponible","5","250000",".","Aeropuerto El Dorado"
-"CUF196","Changan","E-star Electrico","Blanco","Automatica","LY -Electrico automatico","Disponible","5","250000",".","Aeropuerto El Dorado"
-"ITE301","Changan","E-star Electrico","Blanco","Automatica","LY -Electrico automatico","Disponible","5","250000",".","Aeropuerto El Dorado"
-"FER231","Changan","E-star Electrico","Blanco","Automatica","LY -Electrico automatico","Disponible","5","250000",".","Aeropuerto El Dorado"
-"NOB319","Renault","Duster Oroch 1.6","Gris","Mecanica","VP -Pick up con aire plus","Alquilado","5","305364","Alquilado desde 2023-11-12 13:00 hasta 2023-11-20 13:00","Fuera de las sedes"
-"FUN159","Renault","Duster Oroch 1.6","Gris","Mecanica","VP -Pick up con aire plus","Disponible","5","305364",".","Aeropuerto El Dorado"
-"PRE694","Renault","Duster Oroch 1.6","Gris","Mecanica","VP -Pick up con aire plus","Disponible","5","305364",".","Aeropuerto El Dorado"
-"HIG973","Renault","Duster Oroch 1.6","Gris","Mecanica","VP -Pick up con aire plus","Disponible","5","305364",".","Aeropuerto El Dorado"
-"GRE741","Renault","Duster Oroch 1.6","Gris","Mecanica","VP -Pick up con aire plus","Disponible","5","305364",".","Aeropuerto El Dorado"
-"APO986","Renault","Duster Oroch 1.6","Gris","Mecanica","VP -Pick up con aire plus","Disponible","5","305364",".","Aeropuerto El Dorado"
-"LUE156","Renault","Duster Oroch 1.6","Gris","Mecanica","VP -Pick up con aire plus","Disponible","5","305364",".","Aeropuerto El Dorado"
-"FUC961","Renault","Duster Oroch 1.6","Gris","Mecanica","VP -Pick up con aire plus","Disponible","5","305364",".","Aeropuerto El Dorado"
-"FAL098","Renault","Duster Oroch 1.6","Gris","Mecanica","VP -Pick up con aire plus","Disponible","5","305364",".","Aeropuerto El Dorado"
-"LOR111","Renault","Duster Oroch 1.6","Gris","Mecanica","VP -Pick up con aire plus","Disponible","5","305364",".","Aeropuerto El Dorado"
-"HYE357","Ford","Ranger XLT 3.2","Dorado","Automatica","PX - 4x4 especial automatico","Alquilado","5","365450","alquilado desde 2023-10-15 11:00 hasta 2023-10-20 11:00","Fuera de las sedes"
-"KSA679","Ford","Ranger XLT 3.2","Dorado","Automatica","PX - 4x4 especial automatico","Alquilado","5","365450","Alquilado desde 2023-10-15 11:00 hasta 2023-10-20 11:00","Fuera de las sedes"
-"GAR479","Ford","Ranger XLT 3.2","Dorado","Automatica","PX - 4x4 especial automatico","Alquilado","5","365450","Alquilado desde 2023-10-15 11:00 hasta 2023-10-20 11:00","Fuera de las sedes"
-"HST314","Ford","Ranger XLT 3.2","Dorado","Automatica","PX - 4x4 especial automatico","Alquilado","5","365450","Alquilado desde 2023-10-15 11:00 hasta 2023-10-20 11:00","Fuera de las sedes"
-"JUR579","Ford","Ranger XLT 3.2","Dorado","Automatica","PX - 4x4 especial automatico","Alquilado","5","365450","Alquilado desde 2023-10-15 13:00 hasta 2023-10-20 13:00","Fuera de las sedes"
-"LOP987","Ford","Ranger XLT 3.2","Dorado","Automatica","PX - 4x4 especial automatico","Alquilado","5","365450","Alquilado desde 2023-10-15 13:00 hasta 2023-10-20 13:00","Fuera de las sedes"
-"URE730","Ford","Ranger XLT 3.2","Dorado","Automatica","PX - 4x4 especial automatico","Disponible","5","365450",".","Aeropuerto El Dorado"
-"IPA911","Ford","Ranger XLT 3.2","Dorado","Automatica","PX - 4x4 especial automatico","Disponible","5","365450",".","Aeropuerto El Dorado"
-"JUU873","Ford","Ranger XLT 3.2","Dorado","Automatica","PX - 4x4 especial automatico","Disponible","5","365450",".","Aeropuerto El Dorado"
-"GIM503","Ford","Ranger XLT 3.2","Dorado","Automatica","PX - 4x4 especial automatico","Disponible","5","365450",".","Aeropuerto El Dorado"
+Placa,Marca,Modelo,Color ,Transmision,Categoria,Estado,Cantidad pasajeros,Tarifa diaria,Observaciones ,tipoVehiculo
+ABC123,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,En Mantenimiento,5,152250,2023-12-12 - Problema en las llantas,automovil
+XYZ456,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,Alquilado,5,152250,Alquilado desde 2023-11-13 19:40 hasta 2023-11-15 19:40,automovil
+DEF789,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
+GHI101,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
+JKL202,Fiat,Mobi 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
+MNO303,Fiat,Mobi 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
+PQR404,Fiat,Mobi 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
+STU505,Suzuki,S-Presso 1.0,Naranja,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
+VWX606,Suzuki,S-Presso 1.0,Naranja,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
+YZA707,Suzuki,S-Presso 1.0,Naranja,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
+FAA456,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
+OUT894,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
+DHD657,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
+FDS357,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
+YWR447,Renault,Logan 1.6,Gris,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
+DXR566,Renault,Logan 1.6,Gris,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
+GAY654,Renault,Logan 1.6,Gris,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
+RES466,Volkswagen,Gol Trendline 1.6,Plateado,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
+DGF798,Volkswagen,Gol Trendline 1.6,Plateado,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
+DGE899,Volkswagen,Gol Trendline 1.6,Plateado,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
+TFY756,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
+DGE323,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
+FDS595,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
+GDF520,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
+FSD665,Hyundai,Accent Advance 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
+DDS566,Hyundai,Accent Advance 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
+FSR987,Hyundai,Accent Advance 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
+TSD456,Renault,Logan Dynamique 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
+POL675,Renault,Logan Dynamique 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
+IOB654,Renault,Logan Dynamique 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
+XDS789,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
+KOS987,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
+TYR798,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
+FAF185,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
+FSE456,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
+FRE670,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
+SDF595,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
+NDD498,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
+FAD321,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
+HSE652,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
+QAF645,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
+GSF201,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
+LRT014,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
+BCV458,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
+EFC014,Renault,Duster 1.6,Cafe,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
+FSR987,Renault,Duster 1.6,Cafe,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
+GEC799,Renault,Duster 1.6,Cafe,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
+TSE789,Suzuki,Vitara 1.6,Beige,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
+FER564,Suzuki,Vitara 1.6,Beige,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
+FSD104,Suzuki,Vitara 1.6,Beige,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
+GSX025,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
+GLO987,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
+TRE369,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
+CSE015,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
+AFE312,Hyundai,Creta 1.6,Blanco,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
+SXY518,Hyundai,Creta 1.6,Blanco,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
+ELV127,Hyundai,Creta 1.6,Blanco,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
+BTR197,Kia,Sonet 1.5,Negro,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
+GER357,Kia,Sonet 1.5,Negro,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
+LQP917,Kia,Sonet 1.5,Negro,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
+QWQ024,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
+NYR731,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
+FRE781,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
+WAQ741,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
+FWA097,Suzuki,Vitara 1.6,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
+FEW111,Suzuki,Vitara 1.6,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
+VFS444,Suzuki,Vitara 1.6,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
+LEO789,Renault,Duster 2.0,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
+LES961,Renault,Duster 2.0,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
+AIR911,Renault,Duster 2.0,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
+BIN143,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Alquilado,7,488436,Alquilado desde 2023-10-17 13:00 hasta 2023-10-20 18:00,automovil
+FRA974,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
+INT327,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
+LOS457,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
+DEW189,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
+CSD982,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
+CSS367,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
+CRE322,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
+AAA111,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
+EDS976,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
+SER761,Suzuki,Vitara 2.4,Beige,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
+LPW357,Suzuki,Vitara 2.4,Beige,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
+DWA498,Suzuki,Vitara 2.4,Beige,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
+LLO789,Suzuki,Vitara 2.4,Beige,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
+FER978,Renault,Captur 2.0,Negro,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
+MWE345,Renault,Captur 2.0,Negro,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
+FRW479,Renault,Captur 2.0,Negro,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
+AQW301,Chevrolet,Tracker 1.8,Blanco,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
+PIE897,Chevrolet,Tracker 1.8,Blanco,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
+VWA310,Chevrolet,Tracker 1.8,Blanco,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
+QOP931,Renault,Sandero Stepway 1.6,Cafe,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
+DWQ014,Renault,Sandero Stepway 1.6,Cafe,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
+LOP978,Renault,Sandero Stepway 1.6,Cafe,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
+DER364,Renault,Sandero Stepway 1.6,Cafe,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
+PLO781,Renault,Sandero Stepway 1.6,Cafe,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
+AWS815,Hyundai,Accent Premium 1.6,Blanco,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
+MUS614,Hyundai,Accent Premium 1.6,Blanco,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
+GWA976,Hyundai,Accent Premium 1.6,Blanco,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
+XXC321,Hyundai,Accent Premium 1.6,Blanco,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
+FWR986,Hyundai,Accent Premium 1.6,Blanco,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
+VFS258,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Alquilado,5,285545,Alquilado desde 2023-10-30 12:13 hasta 2023-11-30 12:13,automovil
+SFE147,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
+VSD631,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
+LOA617,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
+LUZ666,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
+CDA904,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
+GAF678,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
+LON456,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
+CAS370,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
+VPO609,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
+FSD013,Renault,Koleos 2.5,Blanco,Mecanica,LE -SUV especial,Alquilado,5,292545,Alquilado desde 2023-12-24 12:00 hasta 2023-12-31 12:00,automovil
+LER420,Renault,Koleos 2.5,Blanco,Mecanica,LE -SUV especial,Alquilado,5,292545,Alquilado desde 2023-12-24 12:00 hasta 2023-12-31 12:00,automovil
+WEE420,Renault,Koleos 2.5,Blanco,Mecanica,LE -SUV especial,Alquilado,5,292545,Alquilado desde 2023-12-24 12:00 hasta 2023-12-31 12:00,automovil
+LRF201,Renault,Koleos 2.5,Blanco,Mecanica,LE -SUV especial,Disponible,5,292545,.,automovil
+LTE978,Renault,Koleos 2.5,Blanco,Mecanica,LE -SUV especial,Disponible,5,292545,.,automovil
+KRE127,Nissan,Qashqai 2.0,Blanco,Mecanica,LE -SUV especial,Disponible,5,292545,.,automovil
+MER978,Nissan,Qashqai 2.0,Blanco,Mecanica,LE -SUV especial,Disponible,5,292545,.,automovil
+HER023,Nissan,Qashqai 2.0,Blanco,Mecanica,LE -SUV especial,Disponible,5,292545,.,automovil
+WQE961,Nissan,Qashqai 2.0,Blanco,Mecanica,LE -SUV especial,Disponible,5,292545,.,automovil
+FRE032,Nissan,Qashqai 2.0,Blanco,Mecanica,LE -SUV especial,Disponible,5,292545,.,automovil
+TWQ339,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
+FWQ986,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
+PDW565,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
+GRE873,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
+WER978,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
+RED456,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
+FWE783,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
+CSX000,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
+DSE961,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
+KRO631,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
+GLI679,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Alquilado,5,250000,Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00,automovil
+FOP346,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Alquilado,5,250000,Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00,automovil
+DAE763,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Alquilado,5,250000,Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00,automovil
+GER789,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Alquilado,5,250000,Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00,automovil
+FWE645,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Alquilado,5,250000,Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00,automovil
+BER301,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Disponible,5,250000,.,automovil
+LOW679,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Disponible,5,250000,.,automovil
+CUF196,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Disponible,5,250000,.,automovil
+ITE301,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Disponible,5,250000,.,automovil
+FER231,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Disponible,5,250000,.,automovil
+NOB319,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Alquilado,5,305364,Alquilado desde 2023-11-12 13:00 hasta 2023-11-20 13:00,automovil
+FUN159,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
+PRE694,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
+HIG973,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
+GRE741,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
+APO986,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
+LUE156,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
+FUC961,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
+FAL098,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
+LOR111,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
+HYE357,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Alquilado,5,365450,alquilado desde 2023-10-15 11:00 hasta 2023-10-20 11:00,automovil
+KSA679,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Alquilado,5,365450,Alquilado desde 2023-10-15 11:00 hasta 2023-10-20 11:00,automovil
+GAR479,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Alquilado,5,365450,Alquilado desde 2023-10-15 11:00 hasta 2023-10-20 11:00,automovil
+HST314,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Alquilado,5,365450,Alquilado desde 2023-10-15 11:00 hasta 2023-10-20 11:00,automovil
+JUR579,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Alquilado,5,365450,Alquilado desde 2023-10-15 13:00 hasta 2023-10-20 13:00,automovil
+LOP987,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Alquilado,5,365450,Alquilado desde 2023-10-15 13:00 hasta 2023-10-20 13:00,automovil
+URE730,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Disponible,5,365450,.,automovil
+IPA911,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Disponible,5,365450,.,automovil
+JUU873,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Disponible,5,365450,.,automovil
+GIM503,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Disponible,5,365450,.,automovil

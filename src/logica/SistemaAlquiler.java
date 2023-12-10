@@ -92,7 +92,7 @@ public class SistemaAlquiler {
     		String estado, String pasajeros, String tarifa, String observaciones, String tipoVehiculo) {
         Vehiculo nuevoVehiculo = new Vehiculo(placa, marca, modelo, color, transmision, categoria, estado, pasajeros, tarifa, observaciones, tipoVehiculo);
         inventario.add(nuevoVehiculo);
-        Persistencia.escribirVehiculos(this,"datos/vehiculos.csv");
+        Persistencia.escribirVehiculos(this,"datos/carros.csv");
         agregarEventoAlHistorial(placa, "Se elimino el auto con placa " + placa + " del invetario.");
         Persistencia.escribirEventosVehiculos(this,"datos/eventos.csv");
     }
@@ -105,7 +105,7 @@ public class SistemaAlquiler {
             Vehiculo vehiculo = iterator.next();
             if (vehiculo.getPlaca().equals(placaEliminar)) {
                 iterator.remove(); 
-                Persistencia.escribirVehiculos(this,"datos/vehiculos.csv");
+                Persistencia.escribirVehiculos(this,"datos/carros.csv");
                 agregarEventoAlHistorial(placaEliminar, "Se elimino el auto con placa " + placaEliminar + " del invetario.");
                 Persistencia.escribirEventosVehiculos(this,"datos/eventos.csv");
                 return true;
@@ -248,9 +248,9 @@ public class SistemaAlquiler {
 	public void agregarCliente(String nombreUsuario, String contrasena, String nombre, String numeroTelefonico,String correo,
     		String fechaNacimiento, String nacionalidad,
             String numeroLicencia, String paisExpedicionLicencia,
-            String fechaVencimientoLicencia, String datosTarjetaCredito) {
+            String fechaVencimientoLicencia) {
 		
-		Cliente cliente = new Cliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia, datosTarjetaCredito);
+		Cliente cliente = new Cliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia);
         clientes.add(cliente);
 	}
 

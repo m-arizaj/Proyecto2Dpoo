@@ -129,8 +129,7 @@ public class Persistencia {
 	            String numeroLicencia = linea[7];
 	            String paisExpedicionLicencia = linea[8];
 	            String fechaVencimientoLicencia = linea[9];
-	            String datosTarjetaCredito = linea[10];
-	            sistema.agregarCliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia, datosTarjetaCredito);
+	            sistema.agregarCliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia);
 	        }
 	    } catch (IOException e) {
 	        e.printStackTrace();
@@ -240,7 +239,7 @@ public class Persistencia {
 	        String[] header = {
 	            "NombreUsuario", "Contrasena", "Nombre", "NumeroTelefonico", "Correo",
 	            "FechaNacimiento", "Nacionalidad", "NumeroLicencia", "PaisExpedicionLicencia",
-	            "FechaVencimientoLicencia", "DatosTarjetaCredito"
+	            "FechaVencimientoLicencia"
 	        };
 	        csvWriter.writeNext(header);
 
@@ -255,8 +254,7 @@ public class Persistencia {
 	                cliente.getNacionalidad(),
 	                cliente.getNumeroLicencia(),
 	                cliente.getPaisExpedicionLicencia(),
-	                cliente.getFechaVencimientoLicencia(),
-	                cliente.getDatosTarjetaCredito()
+	                cliente.getFechaVencimientoLicencia()
 	            };
 	            csvWriter.writeNext(data);
 	        }
@@ -308,7 +306,11 @@ public class Persistencia {
 
 
 	        String[] header = {"Placa", "Marca", "Modelo", "Color", "Transmisión", "Categoría", "Estado", "Pasajeros", "Tarifa", 
+<<<<<<< HEAD
 	        		"Observaciones", "tipoVehiculo"};
+=======
+	        		"Observaciones", "Ubicacion", "Tipo"};
+>>>>>>> branch 'master' of https://github.com/m-arizaj/Proyecto2Dpoo.git
 	        csvWriter.writeNext(header);
 
 
@@ -324,6 +326,10 @@ public class Persistencia {
 	                vehiculo.getPasajeros(),
 	                vehiculo.getTarifa(),
 	                vehiculo.getObservaciones(),
+<<<<<<< HEAD
+=======
+	                vehiculo.getUbicacion(),
+>>>>>>> branch 'master' of https://github.com/m-arizaj/Proyecto2Dpoo.git
 	                vehiculo.getTipoVehiculo()
 	            };
 	            csvWriter.writeNext(data);
