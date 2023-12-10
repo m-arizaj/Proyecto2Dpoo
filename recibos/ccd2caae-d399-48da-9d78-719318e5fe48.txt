@@ -1,0 +1,11 @@
+Alquiler de vehiculos
+Id factura: ccd2caae-d399-48da-9d78-719318e5fe48
+Fecha: 09/12/2023 22:54
+Monto: 1364344.0
+Cuenta: andrea
+Nombre completo: Andrea Suarez
+Documento: 79530946
+Correo: andy@gmail.com
+Descripcion: Alquiler de vehiculo de categoria GX -SUV automatico  desde 2023-12-20 12:00 hasta 2023-12-24 12:00
+Medio de pago: Tarjeta terminada en 9874
+----Cuenta cerrada----
