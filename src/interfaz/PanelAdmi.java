@@ -184,7 +184,7 @@ public class PanelAdmi {
             TextField txtCategoria = new TextField();
 
             Label labelTipoVehiculo = new Label("Tipo de Vehículo:");
-            TextField txtTipoVehiculo = new TextField(); // Agregar el campo para el tipo de vehículo
+            TextField txtTipoVehiculo = new TextField(); 
 
             Button btnAgregar = new Button("Agregar");
             Button btnRegresar = new Button("Regresar");
@@ -199,7 +199,7 @@ public class PanelAdmi {
                 String categoria = txtCategoria.getText();
                 String tipoVehiculo = txtTipoVehiculo.getText(); // Obtener el tipo de vehículo
 
-                sistema.agregarVehiculo(placa, marca, modelo, color, transmision, categoria, null, null, null, null, tipoVehiculo);
+                sistema.agregarVehiculo(placa, marca, modelo, color, transmision, categoria, null, null, null, null, null, tipoVehiculo);
 
                 mostrarMensajeExito("El vehículo se añadió con éxito");
 

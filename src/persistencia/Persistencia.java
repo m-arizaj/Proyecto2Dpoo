@@ -129,7 +129,8 @@ public class Persistencia {
 	            String numeroLicencia = linea[7];
 	            String paisExpedicionLicencia = linea[8];
 	            String fechaVencimientoLicencia = linea[9];
-	            sistema.agregarCliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia);
+	            String datosTarjetaCredito = linea[10];
+	            sistema.agregarCliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia, datosTarjetaCredito);
 	        }
 	    } catch (IOException e) {
 	        e.printStackTrace();
@@ -153,10 +154,11 @@ public class Persistencia {
 	            String cantidadPasajeros = linea[7];
 	            String tarifaDiaria = linea[8];
 	            String observaciones = linea[9];
-	            String tipoVehiculo = linea[10];
-
+	            String ubicacion = linea[10];
+	            String tipoVehiculo = linea[11];
+	            
 	            sistema.agregarVehiculo(placa, marca, modelo, color, transmision, categoria, estado, cantidadPasajeros,
-	                    tarifaDiaria, observaciones, tipoVehiculo);
+	                    tarifaDiaria, observaciones, ubicacion, tipoVehiculo);
 	        }
 	    } catch (IOException | CsvValidationException e) {
 	        e.printStackTrace();
@@ -306,11 +308,9 @@ public class Persistencia {
 
 
 	        String[] header = {"Placa", "Marca", "Modelo", "Color", "Transmisión", "Categoría", "Estado", "Pasajeros", "Tarifa", 
-<<<<<<< HEAD
-	        		"Observaciones", "tipoVehiculo"};
-=======
 	        		"Observaciones", "Ubicacion", "Tipo"};
->>>>>>> branch 'master' of https://github.com/m-arizaj/Proyecto2Dpoo.git
+
+	        		
 	        csvWriter.writeNext(header);
 
 
@@ -326,10 +326,7 @@ public class Persistencia {
 	                vehiculo.getPasajeros(),
 	                vehiculo.getTarifa(),
 	                vehiculo.getObservaciones(),
-<<<<<<< HEAD
-=======
 	                vehiculo.getUbicacion(),
->>>>>>> branch 'master' of https://github.com/m-arizaj/Proyecto2Dpoo.git
 	                vehiculo.getTipoVehiculo()
 	            };
 	            csvWriter.writeNext(data);

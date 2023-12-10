@@ -89,8 +89,8 @@ public class SistemaAlquiler {
     
 
     public void agregarVehiculo(String placa, String marca, String modelo, String color, String transmision, String categoria, 
-    		String estado, String pasajeros, String tarifa, String observaciones, String tipoVehiculo) {
-        Vehiculo nuevoVehiculo = new Vehiculo(placa, marca, modelo, color, transmision, categoria, estado, pasajeros, tarifa, observaciones, tipoVehiculo);
+    		String estado, String pasajeros, String tarifa, String observaciones, String ubicacion, String tipoVehiculo) {
+        Vehiculo nuevoVehiculo = new Vehiculo(placa, marca, modelo, color, transmision, categoria, estado, pasajeros, tarifa, observaciones, ubicacion, tipoVehiculo);
         inventario.add(nuevoVehiculo);
         Persistencia.escribirVehiculos(this,"datos/carros.csv");
         agregarEventoAlHistorial(placa, "Se elimino el auto con placa " + placa + " del invetario.");
@@ -248,9 +248,9 @@ public class SistemaAlquiler {
 	public void agregarCliente(String nombreUsuario, String contrasena, String nombre, String numeroTelefonico,String correo,
     		String fechaNacimiento, String nacionalidad,
             String numeroLicencia, String paisExpedicionLicencia,
-            String fechaVencimientoLicencia) {
+            String fechaVencimientoLicencia, String datosTarjetaCredito) {
 		
-		Cliente cliente = new Cliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia);
+		Cliente cliente = new Cliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia, fechaVencimientoLicencia);
         clientes.add(cliente);
 	}
 

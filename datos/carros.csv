@@ -1,161 +1,81 @@
-Placa,Marca,Modelo,Color ,Transmision,Categoria,Estado,Cantidad pasajeros,Tarifa diaria,Observaciones ,tipoVehiculo
-ABC123,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,En Mantenimiento,5,152250,2023-12-12 - Problema en las llantas,automovil
-XYZ456,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,Alquilado,5,152250,Alquilado desde 2023-11-13 19:40 hasta 2023-11-15 19:40,automovil
-DEF789,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
-GHI101,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
-JKL202,Fiat,Mobi 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
-MNO303,Fiat,Mobi 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
-PQR404,Fiat,Mobi 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
-STU505,Suzuki,S-Presso 1.0,Naranja,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
-VWX606,Suzuki,S-Presso 1.0,Naranja,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
-YZA707,Suzuki,S-Presso 1.0,Naranja,Mecanica,C -Economico con aire,Disponible,5,152250,.,automovil
-FAA456,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
-OUT894,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
-DHD657,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
-FDS357,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
-YWR447,Renault,Logan 1.6,Gris,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
-DXR566,Renault,Logan 1.6,Gris,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
-GAY654,Renault,Logan 1.6,Gris,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
-RES466,Volkswagen,Gol Trendline 1.6,Plateado,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
-DGF798,Volkswagen,Gol Trendline 1.6,Plateado,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
-DGE899,Volkswagen,Gol Trendline 1.6,Plateado,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,automovil
-TFY756,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
-DGE323,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
-FDS595,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
-GDF520,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
-FSD665,Hyundai,Accent Advance 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
-DDS566,Hyundai,Accent Advance 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
-FSR987,Hyundai,Accent Advance 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
-TSD456,Renault,Logan Dynamique 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
-POL675,Renault,Logan Dynamique 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
-IOB654,Renault,Logan Dynamique 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,automovil
-XDS789,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
-KOS987,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
-TYR798,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
-FAF185,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
-FSE456,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
-FRE670,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
-SDF595,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
-NDD498,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
-FAD321,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
-HSE652,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,automovil
-QAF645,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
-GSF201,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
-LRT014,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
-BCV458,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
-EFC014,Renault,Duster 1.6,Cafe,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
-FSR987,Renault,Duster 1.6,Cafe,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
-GEC799,Renault,Duster 1.6,Cafe,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
-TSE789,Suzuki,Vitara 1.6,Beige,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
-FER564,Suzuki,Vitara 1.6,Beige,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
-FSD104,Suzuki,Vitara 1.6,Beige,Mecanica,G -SUV compacto,Disponible,5,237900,.,automovil
-GSX025,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
-GLO987,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
-TRE369,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
-CSE015,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
-AFE312,Hyundai,Creta 1.6,Blanco,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
-SXY518,Hyundai,Creta 1.6,Blanco,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
-ELV127,Hyundai,Creta 1.6,Blanco,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
-BTR197,Kia,Sonet 1.5,Negro,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
-GER357,Kia,Sonet 1.5,Negro,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
-LQP917,Kia,Sonet 1.5,Negro,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,automovil
-QWQ024,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
-NYR731,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
-FRE781,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
-WAQ741,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
-FWA097,Suzuki,Vitara 1.6,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
-FEW111,Suzuki,Vitara 1.6,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
-VFS444,Suzuki,Vitara 1.6,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
-LEO789,Renault,Duster 2.0,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
-LES961,Renault,Duster 2.0,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
-AIR911,Renault,Duster 2.0,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,automovil
-BIN143,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Alquilado,7,488436,Alquilado desde 2023-10-17 13:00 hasta 2023-10-20 18:00,automovil
-FRA974,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
-INT327,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
-LOS457,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
-DEW189,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
-CSD982,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
-CSS367,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
-CRE322,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
-AAA111,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
-EDS976,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,automovil
-SER761,Suzuki,Vitara 2.4,Beige,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
-LPW357,Suzuki,Vitara 2.4,Beige,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
-DWA498,Suzuki,Vitara 2.4,Beige,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
-LLO789,Suzuki,Vitara 2.4,Beige,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
-FER978,Renault,Captur 2.0,Negro,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
-MWE345,Renault,Captur 2.0,Negro,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
-FRW479,Renault,Captur 2.0,Negro,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
-AQW301,Chevrolet,Tracker 1.8,Blanco,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
-PIE897,Chevrolet,Tracker 1.8,Blanco,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
-VWA310,Chevrolet,Tracker 1.8,Blanco,Automatica,GX -SUV automatico ,Disponible,5,400000,.,automovil
-QOP931,Renault,Sandero Stepway 1.6,Cafe,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
-DWQ014,Renault,Sandero Stepway 1.6,Cafe,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
-LOP978,Renault,Sandero Stepway 1.6,Cafe,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
-DER364,Renault,Sandero Stepway 1.6,Cafe,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
-PLO781,Renault,Sandero Stepway 1.6,Cafe,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
-AWS815,Hyundai,Accent Premium 1.6,Blanco,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
-MUS614,Hyundai,Accent Premium 1.6,Blanco,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
-GWA976,Hyundai,Accent Premium 1.6,Blanco,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
-XXC321,Hyundai,Accent Premium 1.6,Blanco,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
-FWR986,Hyundai,Accent Premium 1.6,Blanco,Automatica,H -Ejecutivo automatico,Disponible,5,235545,.,automovil
-VFS258,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Alquilado,5,285545,Alquilado desde 2023-10-30 12:13 hasta 2023-11-30 12:13,automovil
-SFE147,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
-VSD631,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
-LOA617,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
-LUZ666,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
-CDA904,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
-GAF678,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
-LON456,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
-CAS370,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
-VPO609,Volkswagen,Jetta R-Line 1.4,Plateado,Automatica,L -Premium automatico,Disponible,5,285545,.,automovil
-FSD013,Renault,Koleos 2.5,Blanco,Mecanica,LE -SUV especial,Alquilado,5,292545,Alquilado desde 2023-12-24 12:00 hasta 2023-12-31 12:00,automovil
-LER420,Renault,Koleos 2.5,Blanco,Mecanica,LE -SUV especial,Alquilado,5,292545,Alquilado desde 2023-12-24 12:00 hasta 2023-12-31 12:00,automovil
-WEE420,Renault,Koleos 2.5,Blanco,Mecanica,LE -SUV especial,Alquilado,5,292545,Alquilado desde 2023-12-24 12:00 hasta 2023-12-31 12:00,automovil
-LRF201,Renault,Koleos 2.5,Blanco,Mecanica,LE -SUV especial,Disponible,5,292545,.,automovil
-LTE978,Renault,Koleos 2.5,Blanco,Mecanica,LE -SUV especial,Disponible,5,292545,.,automovil
-KRE127,Nissan,Qashqai 2.0,Blanco,Mecanica,LE -SUV especial,Disponible,5,292545,.,automovil
-MER978,Nissan,Qashqai 2.0,Blanco,Mecanica,LE -SUV especial,Disponible,5,292545,.,automovil
-HER023,Nissan,Qashqai 2.0,Blanco,Mecanica,LE -SUV especial,Disponible,5,292545,.,automovil
-WQE961,Nissan,Qashqai 2.0,Blanco,Mecanica,LE -SUV especial,Disponible,5,292545,.,automovil
-FRE032,Nissan,Qashqai 2.0,Blanco,Mecanica,LE -SUV especial,Disponible,5,292545,.,automovil
-TWQ339,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
-FWQ986,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
-PDW565,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
-GRE873,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
-WER978,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
-RED456,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
-FWE783,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
-CSX000,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
-DSE961,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
-KRO631,Toyota,Corolla Xei 1.8,Blanco,Automatica,LP -Sedan prime,Disponible,5,256577,.,automovil
-GLI679,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Alquilado,5,250000,Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00,automovil
-FOP346,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Alquilado,5,250000,Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00,automovil
-DAE763,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Alquilado,5,250000,Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00,automovil
-GER789,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Alquilado,5,250000,Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00,automovil
-FWE645,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Alquilado,5,250000,Alquilado desde 2023-11-09 20:00 hasta 2023-11-13 20:00,automovil
-BER301,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Disponible,5,250000,.,automovil
-LOW679,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Disponible,5,250000,.,automovil
-CUF196,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Disponible,5,250000,.,automovil
-ITE301,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Disponible,5,250000,.,automovil
-FER231,Changan,E-star Electrico,Blanco,Automatica,LY -Electrico automatico,Disponible,5,250000,.,automovil
-NOB319,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Alquilado,5,305364,Alquilado desde 2023-11-12 13:00 hasta 2023-11-20 13:00,automovil
-FUN159,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
-PRE694,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
-HIG973,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
-GRE741,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
-APO986,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
-LUE156,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
-FUC961,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
-FAL098,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
-LOR111,Renault,Duster Oroch 1.6,Gris,Mecanica,VP -Pick up con aire plus,Disponible,5,305364,.,automovil
-HYE357,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Alquilado,5,365450,alquilado desde 2023-10-15 11:00 hasta 2023-10-20 11:00,automovil
-KSA679,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Alquilado,5,365450,Alquilado desde 2023-10-15 11:00 hasta 2023-10-20 11:00,automovil
-GAR479,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Alquilado,5,365450,Alquilado desde 2023-10-15 11:00 hasta 2023-10-20 11:00,automovil
-HST314,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Alquilado,5,365450,Alquilado desde 2023-10-15 11:00 hasta 2023-10-20 11:00,automovil
-JUR579,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Alquilado,5,365450,Alquilado desde 2023-10-15 13:00 hasta 2023-10-20 13:00,automovil
-LOP987,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Alquilado,5,365450,Alquilado desde 2023-10-15 13:00 hasta 2023-10-20 13:00,automovil
-URE730,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Disponible,5,365450,.,automovil
-IPA911,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Disponible,5,365450,.,automovil
-JUU873,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Disponible,5,365450,.,automovil
-GIM503,Ford,Ranger XLT 3.2,Dorado,Automatica,PX - 4x4 especial automatico,Disponible,5,365450,.,automovil
+Placa,Marca,Modelo,Color,Transmisión,Categoría,Estado,Pasajeros,Tarifa,Observaciones,Ubicacion,Tipo
+ABC123,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,En Mantenimiento,5,152250,2023-12-12 - Problema en las llantas,Nuestro Bogota,Vehiculo
+XYZ456,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,Alquilado,5,152250,Alquilado desde 2023-11-13 19:40 hasta 2023-11-15 19:40,Fuera de las sedes,Vehiculo
+DEF789,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
+GHI101,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
+JKL202,Fiat,Mobi 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
+MNO303,Fiat,Mobi 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
+PQR404,Fiat,Mobi 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
+STU505,Suzuki,S-Presso 1.0,Naranja,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
+VWX606,Suzuki,S-Presso 1.0,Naranja,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
+YZA707,Suzuki,S-Presso 1.0,Naranja,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
+FAA456,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
+OUT894,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
+DHD657,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
+FDS357,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
+YWR447,Renault,Logan 1.6,Gris,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
+DXR566,Renault,Logan 1.6,Gris,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
+GAY654,Renault,Logan 1.6,Gris,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
+RES466,Volkswagen,Gol Trendline 1.6,Plateado,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
+DGF798,Volkswagen,Gol Trendline 1.6,Plateado,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
+DGE899,Volkswagen,Gol Trendline 1.6,Plateado,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
+TFY756,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
+DGE323,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
+FDS595,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
+GDF520,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
+FSD665,Hyundai,Accent Advance 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
+DDS566,Hyundai,Accent Advance 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
+FSR987,Hyundai,Accent Advance 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
+TSD456,Renault,Logan Dynamique 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
+POL675,Renault,Logan Dynamique 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
+IOB654,Renault,Logan Dynamique 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
+XDS789,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
+KOS987,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
+TYR798,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
+FAF185,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
+FSE456,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
+FRE670,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
+SDF595,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
+NDD498,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
+FAD321,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
+HSE652,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
+QAF645,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
+GSF201,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
+LRT014,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
+BCV458,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
+EFC014,Renault,Duster 1.6,Cafe,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
+FSR987,Renault,Duster 1.6,Cafe,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
+GEC799,Renault,Duster 1.6,Cafe,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
+TSE789,Suzuki,Vitara 1.6,Beige,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
+FER564,Suzuki,Vitara 1.6,Beige,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
+FSD104,Suzuki,Vitara 1.6,Beige,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
+GSX025,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
+GLO987,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
+TRE369,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
+CSE015,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
+AFE312,Hyundai,Creta 1.6,Blanco,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
+SXY518,Hyundai,Creta 1.6,Blanco,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
+ELV127,Hyundai,Creta 1.6,Blanco,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
+BTR197,Kia,Sonet 1.5,Negro,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
+GER357,Kia,Sonet 1.5,Negro,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
+LQP917,Kia,Sonet 1.5,Negro,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
+QWQ024,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
+NYR731,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
+FRE781,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
+WAQ741,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
+FWA097,Suzuki,Vitara 1.6,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
+FEW111,Suzuki,Vitara 1.6,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
+VFS444,Suzuki,Vitara 1.6,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
+LEO789,Renault,Duster 2.0,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
+LES961,Renault,Duster 2.0,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
+AIR911,Renault,Duster 2.0,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
+BIN143,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Alquilado,7,488436,Alquilado desde 2023-10-17 13:00 hasta 2023-10-20 18:00,Fuera de las sedes,Vehiculo
+FRA974,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
+INT327,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
+LOS457,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
+DEW189,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
+CSD982,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
+CSS367,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
+CRE322,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
+AAA111,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
+EDS976,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo

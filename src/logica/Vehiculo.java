@@ -25,10 +25,11 @@ public class Vehiculo {
     private String pasajeros;
     private String tarifa;
     private String observaciones;
+    private String ubicacion;
     private String tipoVehiculo;
 
     public Vehiculo(String placa, String marca, String modelo, String color, String transmision, String categoria, String estado, String pasajeros,
-                    String tarifa, String observaciones, String tipoVehiculo) {
+                    String tarifa, String observaciones,String ubicacion,String tipoVehiculo) {
         this.placa = placa;
         this.marca = marca;
         this.modelo = modelo;
@@ -39,6 +40,7 @@ public class Vehiculo {
         this.pasajeros = pasajeros;
         this.tarifa = tarifa;
         this.observaciones = observaciones;
+        this.ubicacion = ubicacion;
         this.tipoVehiculo = tipoVehiculo;
     }
 
@@ -120,6 +122,14 @@ public class Vehiculo {
 
     public void setObservaciones(String observaciones) {
         this.observaciones = observaciones;
+    }
+    
+    public String getUbicacion() {
+        return ubicacion;
+    }
+
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
     }
 
     public String getTipoVehiculo() {
