@@ -3,6 +3,7 @@ package testing;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
@@ -21,7 +22,7 @@ class PersistenciaTest {
 		String rutaVehiculos = "datos/vehiculoPrueba";
 
 		// Contenido simulado del archivo de vehículos
-		List<String[]> contenidoVehiculos = List.of(
+		List<String[]> contenidoVehiculos = Arrays.asList(
 				new String[] { "Placa", "Marca", "Modelo", "Color", "Transmisión", "Categoría", "Estado", "Pasajeros",
 						"Tarifa", "Observaciones", "tipoVehiculo" },
 				new String[] { "ABC123", "Toyota", "Corolla", "Negro", "Automática", "Sedán", "Disponible", "5", "50",
@@ -73,7 +74,7 @@ class PersistenciaTest {
 	    String rutaReservas = "datos/reservasPrueba";
 
 	    // Contenido simulado del archivo de reservas
-	    List<String[]> contenidoReservas = List.of(
+	    List<String[]> contenidoReservas = Arrays.asList(
 	            new String[]{"Id reserva", "Categoria escogida", "Usuario del cliente", "Sede de recogida", "Sede de entrega",
 	                    "Fecha de inicio alquiler", "Fecha fin alquiler", "Dias facturados", "Costo sin adicionales", "Treinta por ciento costo"},
 	            new String[]{"95f1aef9-e9a0-4daa-b1de-89cac118b4ce", "PX - 4x4 especial automatico", "laura118",
@@ -127,7 +128,7 @@ class PersistenciaTest {
 	    String rutaClientes = "datos/clientePrueba";
 
 	    // Contenido simulado del archivo de clientes
-	    List<String[]> contenidoClientes = List.of(
+	    List<String[]> contenidoClientes = Arrays.asList(
 	            new String[]{"NombreUsuario", "Contrasena", "Nombre", "NumeroTelefonico", "Correo", "FechaNacimiento",
 	                    "Nacionalidad", "NumeroLicencia", "PaisExpedicionLicencia", "FechaVencimientoLicencia",
 	                    "DatosTarjetaCredito"},
@@ -182,10 +183,10 @@ class PersistenciaTest {
 	    String rutaEmpleados = "datos/empleadosPrueba";
 
 	    // Contenido simulado del archivo de empleados
-	    List<String[]> contenidoEmpleados = List.of(
+	    List<String[]> contenidoEmpleados = Arrays.asList(
 	            new String[]{"NombreUsuario", "Contrasena", "NombreCompleto", "Cargo", "SedeNombre"},
-	            new String[]{"juan123", "45678", "Juan Perez", "AgenteVentas", "Sucursal1"},
-	            new String[]{"ana789", "98765", "Ana Rodriguez", "GerenteSucursal", "Sucursal2"}
+	            new String[]{"juan123", "45678", "Juan Perez", "AgenteVentas", "Aeropuerto El Dorado"},
+	            new String[]{"ana789", "98765", "Ana Rodriguez", "GerenteSucursal", "Nuestro Bogota"}
 	    );
 
 	    TestUtils.escribirContenidoEnArchivo(rutaEmpleados, contenidoEmpleados);
@@ -221,7 +222,7 @@ class PersistenciaTest {
 	    String rutaSeguros = "datos/segurosPrueba";
 
 	    // Contenido simulado del archivo de seguros
-	    List<String[]> contenidoSeguros = List.of(
+	    List<String[]> contenidoSeguros = Arrays.asList(
 	            new String[]{"Nombre", "Precio", "Detalles"},
 	            new String[]{"Seguro1", "50000", "Cobertura básica"},
 	            new String[]{"Seguro2", "75000", "Cobertura completa"}

@@ -16,31 +16,23 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.lang.reflect.InvocationTargetException;
 import java.awt.Desktop;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import logica.*;
 
-import com.itextpdf.text.Document;
-import com.itextpdf.text.DocumentException;
-import com.itextpdf.text.Paragraph;
-import com.itextpdf.text.pdf.PdfWriter;
-
-import java.io.FileOutputStream;
-import com.itextpdf.text.FontFactory;
-
-
-
-public class VentanasPayPal
+public class VentanasPayU
 {
 	
+	
 	public void mostrarMenuPago(Stage primaryStage, String seguro, String[] reserva, String tipo, Scene menu) {
-		Image logoPayPal = new Image("file:datos/paypalLogo.png");  // Reemplaza con la ruta correcta de tu logo
+		Image logoPayPal = new Image("file:datos/PayU.png");  // Reemplaza con la ruta correcta de tu logo
         ImageView imageView = new ImageView(logoPayPal);
         double nuevoTamano = 150; // Ajusta el tamaño según tus necesidades
         imageView.setFitWidth(nuevoTamano);
         imageView.setFitHeight(nuevoTamano);
-    	Label lblTitulo = new Label("Realizar pago");
+        Label lblTitulo = new Label("Realizar pago");
         lblTitulo.setFont(Font.font("PayPal Sans",FontWeight.BOLD, 18));
         LocalDateTime fechaHoraActual = LocalDateTime.now();
         String fechaHoraComoString = fechaHoraActual.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm"));
@@ -104,7 +96,7 @@ public class VentanasPayPal
         
         });
         
-        btnAceptar.setStyle("-fx-background-color: #5DADE2;");
+        btnAceptar.setStyle("-fx-background-color: #38F438;");
         
         GridPane gridPane = new GridPane();
         gridPane.setAlignment(Pos.CENTER);
@@ -148,9 +140,6 @@ public class VentanasPayPal
         Button continuar = new Button("Aceptar");
         
         continuar.setOnAction(e -> {
-<<<<<<< HEAD
-            String rutaArchivo = "miarchivo.pdf"; // Cambia el nombre del archivo a un nombre de tu elección
-=======
         	String rutaArchivo = "";
         	
         	if (tipo.equals("reserva")){
@@ -159,13 +148,9 @@ public class VentanasPayPal
         	else if (tipo.equals("alquiler")){
         	rutaArchivo = "recibos/"+transaccion.getId()+".txt";	
         	}
->>>>>>> branch 'master' of https://github.com/m-arizaj/Proyecto2Dpoo.git
 
             try {
                 // Crear el archivo y escribir contenido
-<<<<<<< HEAD
-                escribirEnArchivoPDF(rutaArchivo, transaccion);
-=======
                 escribirEnArchivo(rutaArchivo, "Alquiler de vehiculos\r\n"
                 		+ "Id factura: "+ transaccion.getId()+ "\r\n"
                 		+ "Fecha: " + transaccion.getFecha()+"\r\n"
@@ -177,23 +162,15 @@ public class VentanasPayPal
                 		+ "Descripcion: "+ transaccion.getDescripcion()+ "\r\n"
                 		+ "Medio de pago: "+ texto +"\r\n"
                 		+ "----Cuenta cerrada----");
->>>>>>> branch 'master' of https://github.com/m-arizaj/Proyecto2Dpoo.git
 
                 // Abrir el archivo con la aplicación predeterminada
-<<<<<<< HEAD
-                abrirPDF(rutaArchivo);
-
-                PanelEmpleado.mostrarVentanaExito(primaryStage, seguro, reserva);
-
-            } catch (IOException | DocumentException evv) {
-=======
                 abrirArchivo(rutaArchivo);
                 PanelEmpleado.mostrarVentanaExito(primaryStage, seguro, reserva, menu, tipo);
                 
             } catch (IOException evv) {
->>>>>>> branch 'master' of https://github.com/m-arizaj/Proyecto2Dpoo.git
                 evv.printStackTrace();
             }
+
         });
         
         VBox preguntaAdicionalRoot = new VBox(10);
@@ -201,7 +178,7 @@ public class VentanasPayPal
         preguntaAdicionalRoot.setPadding(new Insets(20));
         preguntaAdicionalRoot.getChildren().addAll(preguntaLabel,lblSubtitulo, continuar);
         
-        continuar.setStyle("-fx-background-color: #5DADE2;");
+        continuar.setStyle("-fx-background-color: #38F438;");
        
         Scene preguntaConductorAdicionalScene = new Scene(preguntaAdicionalRoot, 600, 200);
         primaryStage.setScene(preguntaConductorAdicionalScene);
@@ -209,59 +186,16 @@ public class VentanasPayPal
 		
 	}
 	
-<<<<<<< HEAD
-	public void escribirEnArchivoPDF(String rutaArchivo, Transaccion transaccion) throws IOException, DocumentException {
-	    Document document = new Document();
-	    PdfWriter.getInstance(document, new FileOutputStream(rutaArchivo));
-	    document.open();
-=======
 	 public void escribirEnArchivo(String rutaArchivo, String contenido) throws IOException {
 	        try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutaArchivo, true))) {
 	            writer.write(contenido);
 	        }
 	    }
->>>>>>> branch 'master' of https://github.com/m-arizaj/Proyecto2Dpoo.git
 
-	    // Agregar contenido al PDF
-	    agregarContenidoPDF(document, transaccion);
-
-	    // Cerrar el documento manualmente
-	    document.close();
-	}
-
-
-	private void agregarContenidoPDF(Document document, Transaccion transaccion) throws DocumentException {
-	    // Agregar contenido al PDF
-	    com.itextpdf.text.Font titleFont = FontFactory.getFont(FontFactory.HELVETICA, 16);
-	    com.itextpdf.text.Font font = FontFactory.getFont(FontFactory.HELVETICA, 12);
-
-	    // Título
-	    Paragraph title = new Paragraph("SISTEMA DE ALQUILER DE VEHÍCULOS", titleFont);
-	    title.setAlignment(Paragraph.ALIGN_CENTER);
-	    document.add(title);
-
-	    document.add(new Paragraph("ID Factura: " + transaccion.getId(), font));
-	    document.add(new Paragraph("Fecha: " + transaccion.getFecha(), font));
-	    document.add(new Paragraph("Monto: " + transaccion.getMonto(), font));
-	    document.add(new Paragraph("Cuenta: " + transaccion.getCuenta(), font));
-	    document.add(new Paragraph("Nombre Completo: " + transaccion.getNombre(), font));
-	    document.add(new Paragraph("Documento: " + transaccion.getDocumento(), font));
-	    document.add(new Paragraph("Correo: " + transaccion.getCorreo(), font));
-	    document.add(new Paragraph("Descripción: " + transaccion.getDescripcion(), font));
-	    document.add(new Paragraph("Medio de Pago: " + transaccion.getMedioPago(), font));
-	    document.add(new Paragraph("----Cuenta cerrada----", font));
-	}
-
-
-
-	private void abrirPDF(String pdfPath) {
-	    try {
-	        // Abre el PDF con el programa predeterminado del sistema
-	        Desktop.getDesktop().open(java.nio.file.Paths.get(pdfPath).toFile());
-	    } catch (IOException e) {
-	        e.printStackTrace();
+	 public void abrirArchivo(String rutaArchivo) throws IOException {
+	        Desktop desktop = Desktop.getDesktop();
+	        desktop.open(java.nio.file.Paths.get(rutaArchivo).toFile());
 	    }
-	}
 	 
 	 public void mostrarMensajeInicioFallido() {
 		    Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -274,4 +208,3 @@ public class VentanasPayPal
 	 
 	 
 }
-

@@ -1,0 +1,3 @@
+Placa,Marca,Modelo,Color,Transmisión,Categoría,Estado,Pasajeros,Tarifa,Observaciones,tipoVehiculo
+ABC123,Toyota,Corolla,Negro,Automática,Sedán,Disponible,5,50,Buen estado,Automóvil
+XYZ789,Honda,Civic,Rojo,Automática,Sedán,Ocupado,4,60,Algunos rasguños,Automóvil
