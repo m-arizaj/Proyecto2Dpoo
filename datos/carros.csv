@@ -1,81 +1,81 @@
-Placa,Marca,Modelo,Color,Transmisión,Categoría,Estado,Pasajeros,Tarifa,Observaciones,Ubicacion,Tipo
-ABC123,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,En Mantenimiento,5,152250,2023-12-12 - Problema en las llantas,Nuestro Bogota,Vehiculo
-XYZ456,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,Alquilado,5,152250,Alquilado desde 2023-11-13 19:40 hasta 2023-11-15 19:40,Fuera de las sedes,Vehiculo
-DEF789,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
-GHI101,Kia,Picanto 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
-JKL202,Fiat,Mobi 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
-MNO303,Fiat,Mobi 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
-PQR404,Fiat,Mobi 1.0,Blanco,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
-STU505,Suzuki,S-Presso 1.0,Naranja,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
-VWX606,Suzuki,S-Presso 1.0,Naranja,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
-YZA707,Suzuki,S-Presso 1.0,Naranja,Mecanica,C -Economico con aire,Disponible,5,152250,.,Nuestro Bogota,Vehiculo
-FAA456,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
-OUT894,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
-DHD657,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
-FDS357,Suzuki,Swift Dzire 1.2,Azul,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
-YWR447,Renault,Logan 1.6,Gris,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
-DXR566,Renault,Logan 1.6,Gris,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
-GAY654,Renault,Logan 1.6,Gris,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
-RES466,Volkswagen,Gol Trendline 1.6,Plateado,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
-DGF798,Volkswagen,Gol Trendline 1.6,Plateado,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
-DGE899,Volkswagen,Gol Trendline 1.6,Plateado,Mecanica,F -Intermedio mecanico,Disponible,5,166455,.,Nuestro Bogota,Vehiculo
-TFY756,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
-DGE323,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
-FDS595,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
-GDF520,Suzuki,Swift Dzire 1.2,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
-FSD665,Hyundai,Accent Advance 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
-DDS566,Hyundai,Accent Advance 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
-FSR987,Hyundai,Accent Advance 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
-TSD456,Renault,Logan Dynamique 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
-POL675,Renault,Logan Dynamique 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
-IOB654,Renault,Logan Dynamique 1.6,Gris,Automatica,FX -Intermedio automatico,Disponible,5,173455,.,Nuestro Bogota,Vehiculo
-XDS789,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
-KOS987,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
-TYR798,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
-FAF185,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
-FSE456,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
-FRE670,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
-SDF595,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
-NDD498,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
-FAD321,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
-HSE652,Suzuki,Swift H�brido,Plateado,Mecanica,FY -Intermedio hibrido ,Disponible,5,195773,.,Nuestro Bogota,Vehiculo
-QAF645,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
-GSF201,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
-LRT014,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
-BCV458,Fiat,Pulse 1.3,Negro,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
-EFC014,Renault,Duster 1.6,Cafe,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
-FSR987,Renault,Duster 1.6,Cafe,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
-GEC799,Renault,Duster 1.6,Cafe,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
-TSE789,Suzuki,Vitara 1.6,Beige,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
-FER564,Suzuki,Vitara 1.6,Beige,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
-FSD104,Suzuki,Vitara 1.6,Beige,Mecanica,G -SUV compacto,Disponible,5,237900,.,Nuestro Bogota,Vehiculo
-GSX025,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
-GLO987,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
-TRE369,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
-CSE015,Opel ,Crossland 1.2,Plateado,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
-AFE312,Hyundai,Creta 1.6,Blanco,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
-SXY518,Hyundai,Creta 1.6,Blanco,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
-ELV127,Hyundai,Creta 1.6,Blanco,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
-BTR197,Kia,Sonet 1.5,Negro,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
-GER357,Kia,Sonet 1.5,Negro,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
-LQP917,Kia,Sonet 1.5,Negro,Automatica,GC -SUV compacto automatico,Disponible,5,481436,.,Nuestro Bogota,Vehiculo
-QWQ024,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
-NYR731,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
-FRE781,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
-WAQ741,Renault,Duster 1.3,Cafe,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
-FWA097,Suzuki,Vitara 1.6,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
-FEW111,Suzuki,Vitara 1.6,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
-VFS444,Suzuki,Vitara 1.6,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
-LEO789,Renault,Duster 2.0,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
-LES961,Renault,Duster 2.0,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
-AIR911,Renault,Duster 2.0,Blanco,Mecanica,G4 -SUV mecanica 4x4,Disponible,5,474436,.,Nuestro Bogota,Vehiculo
-BIN143,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Alquilado,7,488436,Alquilado desde 2023-10-17 13:00 hasta 2023-10-20 18:00,Fuera de las sedes,Vehiculo
-FRA974,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
-INT327,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
-LOS457,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
-DEW189,Mitsubishi,Montero Sport GLS 3.0,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
-CSD982,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
-CSS367,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
-CRE322,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
-AAA111,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
-EDS976,Chevrolet,Trailblazer LTZ 3.6,Blanco,Automatica,GR -SUV elite,Disponible,7,488436,.,Nuestro Bogota,Vehiculo
+"Placa","Marca","Modelo","Color","Transmisión","Categoría","Estado","Pasajeros","Tarifa","Observaciones","Ubicacion","Tipo"
+"ABC123","Kia","Picanto 1.0","Blanco","Mecanica","C -Economico con aire","En Mantenimiento","5","152250","2023-12-12 - Problema en las llantas","Nuestro Bogota","Vehiculo"
+"XYZ456","Kia","Picanto 1.0","Blanco","Mecanica","C -Economico con aire","Alquilado","5","152250","Alquilado desde 2023-11-13 19:40 hasta 2023-11-15 19:40","Fuera de las sedes","Vehiculo"
+"DEF789","Kia","Picanto 1.0","Blanco","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota","Vehiculo"
+"GHI101","Kia","Picanto 1.0","Blanco","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota","Vehiculo"
+"JKL202","Fiat","Mobi 1.0","Blanco","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota","Vehiculo"
+"MNO303","Fiat","Mobi 1.0","Blanco","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota","Vehiculo"
+"PQR404","Fiat","Mobi 1.0","Blanco","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota","Vehiculo"
+"STU505","Suzuki","S-Presso 1.0","Naranja","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota","Vehiculo"
+"VWX606","Suzuki","S-Presso 1.0","Naranja","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota","Vehiculo"
+"YZA707","Suzuki","S-Presso 1.0","Naranja","Mecanica","C -Economico con aire","Disponible","5","152250",".","Nuestro Bogota","Vehiculo"
+"FAA456","Suzuki","Swift Dzire 1.2","Azul","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota","Vehiculo"
+"OUT894","Suzuki","Swift Dzire 1.2","Azul","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota","Vehiculo"
+"DHD657","Suzuki","Swift Dzire 1.2","Azul","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota","Vehiculo"
+"FDS357","Suzuki","Swift Dzire 1.2","Azul","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota","Vehiculo"
+"YWR447","Renault","Logan 1.6","Gris","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota","Vehiculo"
+"DXR566","Renault","Logan 1.6","Gris","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota","Vehiculo"
+"GAY654","Renault","Logan 1.6","Gris","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota","Vehiculo"
+"RES466","Volkswagen","Gol Trendline 1.6","Plateado","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota","Vehiculo"
+"DGF798","Volkswagen","Gol Trendline 1.6","Plateado","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota","Vehiculo"
+"DGE899","Volkswagen","Gol Trendline 1.6","Plateado","Mecanica","F -Intermedio mecanico","Disponible","5","166455",".","Nuestro Bogota","Vehiculo"
+"TFY756","Suzuki","Swift Dzire 1.2","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota","Vehiculo"
+"DGE323","Suzuki","Swift Dzire 1.2","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota","Vehiculo"
+"FDS595","Suzuki","Swift Dzire 1.2","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota","Vehiculo"
+"GDF520","Suzuki","Swift Dzire 1.2","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota","Vehiculo"
+"FSD665","Hyundai","Accent Advance 1.6","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota","Vehiculo"
+"DDS566","Hyundai","Accent Advance 1.6","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota","Vehiculo"
+"FSR987","Hyundai","Accent Advance 1.6","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota","Vehiculo"
+"TSD456","Renault","Logan Dynamique 1.6","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota","Vehiculo"
+"POL675","Renault","Logan Dynamique 1.6","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota","Vehiculo"
+"IOB654","Renault","Logan Dynamique 1.6","Gris","Automatica","FX -Intermedio automatico","Disponible","5","173455",".","Nuestro Bogota","Vehiculo"
+"XDS789","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota","Vehiculo"
+"KOS987","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota","Vehiculo"
+"TYR798","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota","Vehiculo"
+"FAF185","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota","Vehiculo"
+"FSE456","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota","Vehiculo"
+"FRE670","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota","Vehiculo"
+"SDF595","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota","Vehiculo"
+"NDD498","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota","Vehiculo"
+"FAD321","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota","Vehiculo"
+"HSE652","Suzuki","Swift H�brido","Plateado","Mecanica","FY -Intermedio hibrido ","Disponible","5","195773",".","Nuestro Bogota","Vehiculo"
+"QAF645","Fiat","Pulse 1.3","Negro","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota","Vehiculo"
+"GSF201","Fiat","Pulse 1.3","Negro","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota","Vehiculo"
+"LRT014","Fiat","Pulse 1.3","Negro","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota","Vehiculo"
+"BCV458","Fiat","Pulse 1.3","Negro","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota","Vehiculo"
+"EFC014","Renault","Duster 1.6","Cafe","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota","Vehiculo"
+"FSR987","Renault","Duster 1.6","Cafe","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota","Vehiculo"
+"GEC799","Renault","Duster 1.6","Cafe","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota","Vehiculo"
+"TSE789","Suzuki","Vitara 1.6","Beige","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota","Vehiculo"
+"FER564","Suzuki","Vitara 1.6","Beige","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota","Vehiculo"
+"FSD104","Suzuki","Vitara 1.6","Beige","Mecanica","G -SUV compacto","Disponible","5","237900",".","Nuestro Bogota","Vehiculo"
+"GSX025","Opel ","Crossland 1.2","Plateado","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota","Vehiculo"
+"GLO987","Opel ","Crossland 1.2","Plateado","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota","Vehiculo"
+"TRE369","Opel ","Crossland 1.2","Plateado","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota","Vehiculo"
+"CSE015","Opel ","Crossland 1.2","Plateado","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota","Vehiculo"
+"AFE312","Hyundai","Creta 1.6","Blanco","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota","Vehiculo"
+"SXY518","Hyundai","Creta 1.6","Blanco","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota","Vehiculo"
+"ELV127","Hyundai","Creta 1.6","Blanco","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota","Vehiculo"
+"BTR197","Kia","Sonet 1.5","Negro","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota","Vehiculo"
+"GER357","Kia","Sonet 1.5","Negro","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota","Vehiculo"
+"LQP917","Kia","Sonet 1.5","Negro","Automatica","GC -SUV compacto automatico","Disponible","5","481436",".","Nuestro Bogota","Vehiculo"
+"QWQ024","Renault","Duster 1.3","Cafe","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota","Vehiculo"
+"NYR731","Renault","Duster 1.3","Cafe","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota","Vehiculo"
+"FRE781","Renault","Duster 1.3","Cafe","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota","Vehiculo"
+"WAQ741","Renault","Duster 1.3","Cafe","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota","Vehiculo"
+"FWA097","Suzuki","Vitara 1.6","Blanco","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota","Vehiculo"
+"FEW111","Suzuki","Vitara 1.6","Blanco","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota","Vehiculo"
+"VFS444","Suzuki","Vitara 1.6","Blanco","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota","Vehiculo"
+"LEO789","Renault","Duster 2.0","Blanco","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota","Vehiculo"
+"LES961","Renault","Duster 2.0","Blanco","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota","Vehiculo"
+"AIR911","Renault","Duster 2.0","Blanco","Mecanica","G4 -SUV mecanica 4x4","Disponible","5","474436",".","Nuestro Bogota","Vehiculo"
+"BIN143","Mitsubishi","Montero Sport GLS 3.0","Blanco","Automatica","GR -SUV elite","Alquilado","7","488436","Alquilado desde 2023-10-17 13:00 hasta 2023-10-20 18:00","Fuera de las sedes","Vehiculo"
+"FRA974","Mitsubishi","Montero Sport GLS 3.0","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota","Vehiculo"
+"INT327","Mitsubishi","Montero Sport GLS 3.0","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota","Vehiculo"
+"LOS457","Mitsubishi","Montero Sport GLS 3.0","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota","Vehiculo"
+"DEW189","Mitsubishi","Montero Sport GLS 3.0","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota","Vehiculo"
+"CSD982","Chevrolet","Trailblazer LTZ 3.6","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota","Vehiculo"
+"CSS367","Chevrolet","Trailblazer LTZ 3.6","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota","Vehiculo"
+"CRE322","Chevrolet","Trailblazer LTZ 3.6","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota","Vehiculo"
+"AAA111","Chevrolet","Trailblazer LTZ 3.6","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota","Vehiculo"
+"EDS976","Chevrolet","Trailblazer LTZ 3.6","Blanco","Automatica","GR -SUV elite","Disponible","7","488436",".","Nuestro Bogota","Vehiculo"
