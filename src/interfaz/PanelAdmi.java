@@ -184,7 +184,7 @@ public class PanelAdmi {
             TextField txtCategoria = new TextField();
 
             Label labelTipoVehiculo = new Label("Tipo de Vehículo:");
-            TextField txtTipoVehiculo = new TextField(); // Agregar el campo para el tipo de vehículo
+            TextField txtTipoVehiculo = new TextField(); 
 
             Button btnAgregar = new Button("Agregar");
             Button btnRegresar = new Button("Regresar");

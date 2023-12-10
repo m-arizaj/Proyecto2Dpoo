@@ -105,7 +105,7 @@ public class SistemaAlquiler {
             Vehiculo vehiculo = iterator.next();
             if (vehiculo.getPlaca().equals(placaEliminar)) {
                 iterator.remove(); 
-                Persistencia.escribirVehiculos(this,"datos/vehiculos.csv");
+                Persistencia.escribirVehiculos(this,"datos/carros.csv");
                 agregarEventoAlHistorial(placaEliminar, "Se elimino el auto con placa " + placaEliminar + " del invetario.");
                 Persistencia.escribirEventosVehiculos(this,"datos/eventos.csv");
                 return true;
@@ -248,9 +248,9 @@ public class SistemaAlquiler {
 	public void agregarCliente(String nombreUsuario, String contrasena, String nombre, String numeroTelefonico,String correo,
     		String fechaNacimiento, String nacionalidad,
             String numeroLicencia, String paisExpedicionLicencia,
-            String fechaVencimientoLicencia) {
+            String fechaVencimientoLicencia, String datosTarjetaCredito) {
 		
-		Cliente cliente = new Cliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia);
+		Cliente cliente = new Cliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia, fechaVencimientoLicencia);
         clientes.add(cliente);
 	}
 

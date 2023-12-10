@@ -80,8 +80,10 @@ public class PanelCliente {
         String fechavl = scanner.nextLine();
         String fechaVencimientoLicencia = fechavl;
 
+        System.out.print("Datos de la tarjeta de credito (numero-cvv-MM/yyyy): ");
+        String datosTarjetaCredito = scanner.nextLine();
 
-        sistema.agregarCliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia);
+        sistema.agregarCliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia, datosTarjetaCredito);
         System.out.println("Su cuenta fue creada satisfactoriamente");
         Persistencia.escribirClientes(sistema, "datos/clientes.csv");
 	}

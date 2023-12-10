@@ -1,0 +1,3 @@
+Id reserva,Categoria escogida,Usuario del cliente,Sede de recogida,Sede de entrega,Fecha de inicio alquiler,Fecha fin alquiler,Dias facturados,Costo sin adicionales,Treinta por ciento costo
+95f1aef9-e9a0-4daa-b1de-89cac118b4ce,PX - 4x4 especial automatico,laura118,Aeropuerto El Dorado,Aeropuerto El Dorado,10/15/2023 13:00,10/20/2023 13:00,5,1827250,548175
+512da6a5-441e-4f5c-814b-8ac9551c288e,LY -Electrico automatico,laura118,Aeropuerto El Dorado,Aeropuerto El Dorado,10/17/2023 12:30,10/23/2023 11:30,6,1500000,450000

@@ -14,10 +14,12 @@ public class Cliente implements Usuario {
     private String numeroLicencia;
     private String paisExpedicionLicencia;
     private String fechaVencimientoLicencia;
+    private String datosTarjetaCredito;
 
     public Cliente(String nombreUsuario, String contrasena, String nombre, String numeroTelefonico,String correo,
     		String fechaNacimiento, String nacionalidad,
-                   String numeroLicencia, String paisExpedicionLicencia,String fechaVencimientoLicencia) {
+                   String numeroLicencia, String paisExpedicionLicencia,
+                   String fechaVencimientoLicencia, String datosTarjetaCredito) {
         this.nombreUsuario = nombreUsuario;
         this.contrasena = contrasena;
         this.nombre = nombre;
@@ -28,6 +30,7 @@ public class Cliente implements Usuario {
         this.numeroLicencia = numeroLicencia;
         this.paisExpedicionLicencia = paisExpedicionLicencia;
         this.fechaVencimientoLicencia = fechaVencimientoLicencia;
+        this.datosTarjetaCredito = datosTarjetaCredito;
     }
 
     @Override
@@ -78,6 +81,11 @@ public class Cliente implements Usuario {
 	public String getFechaVencimientoLicencia()
 	{
 		return fechaVencimientoLicencia;
+	}
+
+	public String getDatosTarjetaCredito()
+	{
+		return datosTarjetaCredito;
 	}
     
     

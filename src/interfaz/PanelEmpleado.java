@@ -516,7 +516,7 @@ public class PanelEmpleado
         });
 
         noButton.setOnAction(e -> {
-        	mostrarVentanaPasarelas(primaryStage, seguro, reserva, "alquiler", menuPrincipal);
+        	mostrarVentanaPasarelas(primaryStage, seguro, reserva);
 
         });
 
@@ -597,7 +597,7 @@ public class PanelEmpleado
         aceptarButton.setStyle("-fx-background-color: #3498DB;");
     }
     
-    public static void mostrarVentanaPasarelas(Stage primaryStage, String seguro, String[] reserva, String tipo, Scene menu) {
+    private static void mostrarVentanaPasarelas(Stage primaryStage, String seguro, String[] reserva) {
     	Label preguntaLabel = new Label("Seleccione su plataforma preferida para realizar el pago");
         preguntaLabel.setFont(Font.font("Arial", FontWeight.BOLD, 15));
         
@@ -611,7 +611,7 @@ public class PanelEmpleado
         	
 //        	VentanasPayPal pasarela = new VentanasPayPal();
         	String seleccion = choiceBox.getValue();
-        	mostrarVentanaPago(primaryStage, seguro, reserva, seleccion, tipo, menu);
+        	mostrarVentanaPago(primaryStage, seguro, reserva, seleccion);
 
         });
         
@@ -622,13 +622,13 @@ public class PanelEmpleado
         
         continuar.setStyle("-fx-background-color: #3498DB;");
        
-        Scene preguntaConductorAdicionalScene = new Scene(preguntaAdicionalRoot, 500, 200);
+        Scene preguntaConductorAdicionalScene = new Scene(preguntaAdicionalRoot, 400, 200);
         primaryStage.setScene(preguntaConductorAdicionalScene);
         primaryStage.show();
         
     }
     
-    private static void mostrarVentanaPago(Stage primaryStage, String seguro, String[] reserva, String Pasarela, String tipo, Scene menu) {
+    private static void mostrarVentanaPago(Stage primaryStage, String seguro, String[] reserva, String Pasarela) {
     	Label preguntaLabel = new Label("Se esta redirigiendo su solicitud de pago a la plataforma " + Pasarela);
         preguntaLabel.setFont(Font.font("Arial", FontWeight.BOLD, 15));
         Label lblSubtitulo = new Label("Presione aceptar para continuar");
@@ -637,12 +637,11 @@ public class PanelEmpleado
         
         continuar.setOnAction(e -> {
         	if (Pasarela.equals("PayPal")){
-        		VentanasPayPal pasarela = new VentanasPayPal();
-        		pasarela.mostrarMenuPago(primaryStage, seguro, reserva, tipo, menu);
+        	VentanasPayPal pasarela = new VentanasPayPal();
+        	pasarela.mostrarMenuPago(primaryStage, seguro, reserva);
         	}
         	else {
-        		VentanasPayU pasarela = new VentanasPayU();
-            	pasarela.mostrarMenuPago(primaryStage, seguro, reserva, tipo, menu);
+        		// poner payU
         	}
 
         });
@@ -654,29 +653,24 @@ public class PanelEmpleado
         
         continuar.setStyle("-fx-background-color: #3498DB;");
        
-        Scene preguntaConductorAdicionalScene = new Scene(preguntaAdicionalRoot, 500, 200);
+        Scene preguntaConductorAdicionalScene = new Scene(preguntaAdicionalRoot, 400, 200);
         primaryStage.setScene(preguntaConductorAdicionalScene);
         primaryStage.show();
         
     }
 
-    public static void mostrarVentanaExito(Stage primaryStage, String seguro, String[] reserva, Scene menu, String tipo) {
-    	
+    public static void mostrarVentanaExito(Stage primaryStage, String seguro, String[] reserva) {
     	Label preguntaLabel = new Label("El alquiler fue completado y facturado");
-    	if (tipo.equals("reserva")){
-        	preguntaLabel = new Label("La reserva fue completada y facturada");
-        }
         preguntaLabel.setFont(Font.font("Arial", FontWeight.BOLD, 15));
         Label lblSubtitulo = new Label("Presione aceptar para finalizar");
         lblSubtitulo.setFont(Font.font("Arial", 15));
         Button continuar = new Button("Aceptar");
         
         
-        continuar.setOnAction(e -> {
-        	primaryStage.setScene(menu);
-        	if (tipo.equals("alquiler")){
+        continuar.setOnAction(e -> { 
             completarAlquiler(reserva,seguro);
-            contador = 0;}
+            contador = 0;
+            primaryStage.setScene(menuPrincipal);
 
         });
         

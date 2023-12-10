@@ -2,23 +2,20 @@ package logica;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.math.BigInteger;
 
 public class PayPal implements PasarelaPago
 {
-	
-	
-	
 	@Override
 	public boolean realizarPago(Transaccion transaccion) {
 		
-		String[] medio = transaccion.getMedioPago();
-		boolean LonNum = (medio[0].length())==16;
-		boolean ConNum = medio[0].matches("\\d+");
-		boolean LonCod = (medio[1].length())==3;
-		boolean ConCod = medio[1].matches("\\d+");
-		boolean FechMay = esFechaMayorQueActual(medio[2]);
-	
+		String medio = transaccion.getMedioPago();
+		String[] partes = medio.split("-");
+		boolean LonNum = (partes[0].length())==16;
+		boolean ConNum = esConvertibleAInt(partes[0]);
+		boolean LonCod = (partes[1].length())==3;
+		boolean ConCod = esConvertibleAInt(partes[1]);
+		boolean FechMay = esFechaMayorQueActual(partes[2]);
+		
 		
 		if (LonNum && ConNum && LonCod && ConCod && FechMay) {
 			return true;
@@ -30,12 +27,13 @@ public class PayPal implements PasarelaPago
 	
 	@Override
 	public boolean bloquearCupo(Transaccion transaccion) {
-		String[] medio = transaccion.getMedioPago();
-		boolean LonNum = (medio[0].length())==16;
-		boolean ConNum = medio[0].matches("\\d+");
-		boolean LonCod = (medio[1].length())==3;
-		boolean ConCod = medio[1].matches("\\d+");
-		boolean FechMay = esFechaMayorQueActual(medio[2]);
+		String medio = transaccion.getMedioPago();
+		String[] partes = medio.split("-");
+		boolean LonNum = (partes[0].length())==16;
+		boolean ConNum = esConvertibleAInt(partes[0]);
+		boolean LonCod = (partes[1].length())==3;
+		boolean ConCod = esConvertibleAInt(partes[1]);
+		boolean FechMay = esFechaMayorQueActual(partes[2]);
 		
 		
 		if (LonNum && ConNum && LonCod && ConCod && FechMay) {
@@ -45,12 +43,21 @@ public class PayPal implements PasarelaPago
 			return false;	
 		}
 	}
+	
+	 public boolean esConvertibleAInt(String str) {
+	        try {
+	            Integer.parseInt(str);
+	            return true; 
+	        } catch (NumberFormatException e) {
+	            return false; 
+	        }
+	    }
 	 
 	 public boolean esFechaMayorQueActual(String fechaParametro) {
 	        LocalDate fechaActual = LocalDate.now();
 
-	        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-	        LocalDate fechaParametroLocalDate = LocalDate.parse("01/" +fechaParametro, formatter);
+	        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/yyyy");
+	        LocalDate fechaParametroLocalDate = LocalDate.parse(fechaParametro, formatter);
 
 	        return fechaParametroLocalDate.isAfter(fechaActual);
 	    }
