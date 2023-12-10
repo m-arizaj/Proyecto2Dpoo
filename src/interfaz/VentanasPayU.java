@@ -25,6 +25,7 @@ import logica.*;
 public class VentanasPayU
 {
 	
+	
 	public void mostrarMenuPago(Stage primaryStage, String seguro, String[] reserva, String tipo, Scene menu) {
 		Image logoPayPal = new Image("file:datos/PayU.png");  // Reemplaza con la ruta correcta de tu logo
         ImageView imageView = new ImageView(logoPayPal);
