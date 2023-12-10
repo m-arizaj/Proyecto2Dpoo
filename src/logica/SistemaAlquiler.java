@@ -92,7 +92,7 @@ public class SistemaAlquiler {
     		String estado, String pasajeros, String tarifa, String observaciones, String ubicacion, String tipoVehiculo) {
         Vehiculo nuevoVehiculo = new Vehiculo(placa, marca, modelo, color, transmision, categoria, estado, pasajeros, tarifa, observaciones, ubicacion, tipoVehiculo);
         inventario.add(nuevoVehiculo);
-        Persistencia.escribirVehiculos(this,"datos/vehiculos.csv");
+        Persistencia.escribirVehiculos(this,"datos/carros.csv");
         agregarEventoAlHistorial(placa, "Se elimino el auto con placa " + placa + " del invetario.");
         Persistencia.escribirEventosVehiculos(this,"datos/eventos.csv");
     }
