@@ -137,30 +137,32 @@ public class Persistencia {
 	}
 
 	public static void leerVehiculos(SistemaAlquiler sistema, String rutaVehiculos) {
-        try {
-            CSVReader csvReader = new CSVReaderBuilder(new FileReader(rutaVehiculos))
-                .withSkipLines(1)
-                .build();
-            String[] linea;
-            while ((linea = csvReader.readNext()) != null) {
-                String placa = linea[0];
-                String marca = linea[1];
-                String modelo = linea[2];
-                String color = linea[3];
-                String transmision = linea[4];
-                String categoria = linea[5];
-                String estado = linea[6];
-                String cantidadPasajeros = linea[7];
-                String tarifaDiaria = linea[8];
-                String observaciones = linea[9];
-                String ubicacion = linea[10];
-                sistema.agregarVehiculo(placa, marca, modelo, color, transmision, categoria, estado, cantidadPasajeros, 
-                		tarifaDiaria, observaciones, ubicacion);
-            }
-        } catch (IOException | CsvValidationException e) {
-            e.printStackTrace();
-        }
-    }
+	    try {
+	        CSVReader csvReader = new CSVReaderBuilder(new FileReader(rutaVehiculos))
+	            .withSkipLines(1)
+	            .build();
+	        String[] linea;
+	        while ((linea = csvReader.readNext()) != null) {
+	            String placa = linea[0];
+	            String marca = linea[1];
+	            String modelo = linea[2];
+	            String color = linea[3];
+	            String transmision = linea[4];
+	            String categoria = linea[5];
+	            String estado = linea[6];
+	            String cantidadPasajeros = linea[7];
+	            String tarifaDiaria = linea[8];
+	            String observaciones = linea[9];
+	            String ubicacion = linea[10];
+	            String tipoVehiculo = linea[11]; // Nueva columna
+
+	            sistema.agregarVehiculo(placa, marca, modelo, color, transmision, categoria, estado, cantidadPasajeros,
+	                    tarifaDiaria, observaciones, ubicacion, tipoVehiculo);
+	        }
+	    } catch (IOException | CsvValidationException e) {
+	        e.printStackTrace();
+	    }
+	}
 
 
 	public static void escribirSeguros(SistemaAlquiler sistema, String rutaSeguros) {
