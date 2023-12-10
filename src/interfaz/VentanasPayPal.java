@@ -17,10 +17,18 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.lang.reflect.InvocationTargetException;
 import java.awt.Desktop;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
 import logica.*;
+
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.pdf.PdfWriter;
+
+import java.io.FileOutputStream;
+import com.itextpdf.text.FontFactory;
+
+
 
 public class VentanasPayPal
 {
@@ -147,31 +155,20 @@ public class VentanasPayPal
         Button continuar = new Button("Aceptar");
         
         continuar.setOnAction(e -> {
-        	
-        	String rutaArchivo = "miarchivo.txt";
+            String rutaArchivo = "miarchivo.pdf"; // Cambia el nombre del archivo a un nombre de tu elección
 
             try {
                 // Crear el archivo y escribir contenido
-                escribirEnArchivo(rutaArchivo, "Alquiler de vehiculos\r\n"
-                		+ "id factura: \r\n"
-                		+ "fecha: \r\n"
-                		+ "monto: \r\n"
-                		+ "cuenta: \r\n"
-                		+ "nombre completo: \r\n"
-                		+ "documento: \r\n"
-                		+ "correo: \r\n"
-                		+ "descripcion: \r\n"
-                		+ "medio de pago: \r\n"
-                		+ "----Cuenta cerrada----");
+                escribirEnArchivoPDF(rutaArchivo, transaccion);
 
                 // Abrir el archivo con la aplicación predeterminada
-                abrirArchivo(rutaArchivo);
+                abrirPDF(rutaArchivo);
+
                 PanelEmpleado.mostrarVentanaExito(primaryStage, seguro, reserva);
-                
-            } catch (IOException evv) {
+
+            } catch (IOException | DocumentException evv) {
                 evv.printStackTrace();
             }
-
         });
         
         VBox preguntaAdicionalRoot = new VBox(10);
@@ -187,16 +184,51 @@ public class VentanasPayPal
 		
 	}
 	
-	 public void escribirEnArchivo(String rutaArchivo, String contenido) throws IOException {
-	        try (BufferedWriter writer = new BufferedWriter(new FileWriter(rutaArchivo))) {
-	            writer.write(contenido);
-	        }
-	    }
+	public void escribirEnArchivoPDF(String rutaArchivo, Transaccion transaccion) throws IOException, DocumentException {
+	    Document document = new Document();
+	    PdfWriter.getInstance(document, new FileOutputStream(rutaArchivo));
+	    document.open();
 
-	 public void abrirArchivo(String rutaArchivo) throws IOException {
-	        Desktop desktop = Desktop.getDesktop();
-	        desktop.open(java.nio.file.Paths.get(rutaArchivo).toFile());
+	    // Agregar contenido al PDF
+	    agregarContenidoPDF(document, transaccion);
+
+	    // Cerrar el documento manualmente
+	    document.close();
+	}
+
+
+	private void agregarContenidoPDF(Document document, Transaccion transaccion) throws DocumentException {
+	    // Agregar contenido al PDF
+	    com.itextpdf.text.Font titleFont = FontFactory.getFont(FontFactory.HELVETICA, 16);
+	    com.itextpdf.text.Font font = FontFactory.getFont(FontFactory.HELVETICA, 12);
+
+	    // Título
+	    Paragraph title = new Paragraph("SISTEMA DE ALQUILER DE VEHÍCULOS", titleFont);
+	    title.setAlignment(Paragraph.ALIGN_CENTER);
+	    document.add(title);
+
+	    document.add(new Paragraph("ID Factura: " + transaccion.getId(), font));
+	    document.add(new Paragraph("Fecha: " + transaccion.getFecha(), font));
+	    document.add(new Paragraph("Monto: " + transaccion.getMonto(), font));
+	    document.add(new Paragraph("Cuenta: " + transaccion.getCuenta(), font));
+	    document.add(new Paragraph("Nombre Completo: " + transaccion.getNombre(), font));
+	    document.add(new Paragraph("Documento: " + transaccion.getDocumento(), font));
+	    document.add(new Paragraph("Correo: " + transaccion.getCorreo(), font));
+	    document.add(new Paragraph("Descripción: " + transaccion.getDescripcion(), font));
+	    document.add(new Paragraph("Medio de Pago: " + transaccion.getMedioPago(), font));
+	    document.add(new Paragraph("----Cuenta cerrada----", font));
+	}
+
+
+
+	private void abrirPDF(String pdfPath) {
+	    try {
+	        // Abre el PDF con el programa predeterminado del sistema
+	        Desktop.getDesktop().open(java.nio.file.Paths.get(pdfPath).toFile());
+	    } catch (IOException e) {
+	        e.printStackTrace();
 	    }
+	}
 	 
 	 
 	 
