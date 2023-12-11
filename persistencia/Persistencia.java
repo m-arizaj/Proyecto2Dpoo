@@ -129,8 +129,7 @@ public class Persistencia {
 	            String numeroLicencia = linea[7];
 	            String paisExpedicionLicencia = linea[8];
 	            String fechaVencimientoLicencia = linea[9];
-	            String datosTarjetaCredito = linea[10];
-	            sistema.agregarCliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia, datosTarjetaCredito);
+	            sistema.agregarCliente(nombreUsuario, contrasena, nombre, numeroTelefonico, correo, fechaNacimiento, nacionalidad, numeroLicencia, paisExpedicionLicencia, fechaVencimientoLicencia);
 	        }
 	    } catch (IOException e) {
 	        e.printStackTrace();

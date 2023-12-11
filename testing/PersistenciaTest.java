@@ -160,7 +160,6 @@ class PersistenciaTest {
 	    assertEquals("1000652839", sistema.getClientes().get(0).getNumeroLicencia());
 	    assertEquals("Colombia", sistema.getClientes().get(0).getPaisExpedicionLicencia());
 	    assertEquals("11/10/2027", sistema.getClientes().get(0).getFechaVencimientoLicencia());
-	    assertEquals("1234567891011121-123-11/2030", sistema.getClientes().get(0).getDatosTarjetaCredito());
 
 	    // Verificar propiedades del segundo cliente
 	    assertEquals("andres241", sistema.getClientes().get(1).getNombreUsuario());
@@ -173,7 +172,6 @@ class PersistenciaTest {
 	    assertEquals("1000028765", sistema.getClientes().get(1).getNumeroLicencia());
 	    assertEquals("Colombia", sistema.getClientes().get(1).getPaisExpedicionLicencia());
 	    assertEquals("11/2/2031", sistema.getClientes().get(1).getFechaVencimientoLicencia());
-	    assertEquals("3486512397641234-965-12/2029", sistema.getClientes().get(1).getDatosTarjetaCredito());
 	}
 
 	

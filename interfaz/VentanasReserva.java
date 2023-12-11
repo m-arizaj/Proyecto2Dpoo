@@ -24,7 +24,7 @@ public class VentanasReserva
 	public void mostrarMenuReservas(SistemaAlquiler sistema, Stage primaryStage, String nombre, Scene escenaPrincipal) {
     	Label lblTitulo = new Label("Menú principal");
         lblTitulo.setFont(Font.font("Arial", FontWeight.BOLD, 18));
-        Label lblSubtitulo = new Label("Bienvenido, "+ nombre);
+        Label lblSubtitulo = new Label("Bienvenid@, "+ nombre);
         lblSubtitulo.setFont(Font.font("Arial", FontWeight.BOLD, 15));
     	Button btnReserva = new Button("Realizar una reserva");
         btnReserva.setOnAction(e -> Reservas(sistema,primaryStage, nombre));

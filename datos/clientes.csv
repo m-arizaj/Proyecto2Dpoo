@@ -1,5 +1,6 @@
-NombreUsuario,Contrasena,Nombre,NumeroTelefonico,Correo,FechaNacimiento,Nacionalidad,NumeroLicencia,PaisExpedicionLicencia,FechaVencimientoLicencia,DatosTarjetaCredito
-laura118,92347,Laura Mendez,3014587963,laura.mendez@outlook.com,24/12/1995,Colombiana,1000652839,Colombia,11/10/2027,1234567891011121-123-11/2030
-andres241,78506,Andres Soto,3123456789,andres.soto@outlook.com,05/03/1998,Colombiana,1000028765,Colombia,11/02/2031,3486512397641234-965-12/2029
-f,f,f,f,f,09/11/2001,f,f,f,09/11/2030,f
-Mike,12345,Miguel Ariza ,3258796541,m.arizaj,11/09/2001,Colombiana,6.48416E+11,Colombia,15/04/2030,1234567891011123-123-12/2027
+"NombreUsuario","Contrasena","Nombre","NumeroTelefonico","Correo","FechaNacimiento","Nacionalidad","NumeroLicencia","PaisExpedicionLicencia","FechaVencimientoLicencia"
+"laura118","92347","Laura Mendez","3014587963","laura.mendez@outlook.com","24/12/1995","Colombiana","1000652839","Colombia","11/10/2027"
+"andres241","78506","Andres Soto","3123456789","andres.soto@outlook.com","05/03/1998","Colombiana","1000028765","Colombia","11/02/2031"
+"f","f","f","f","f","09/11/2001","f","f","f","09/11/2030"
+"Mike","12345","Miguel Ariza ","3258796541","m.arizaj","11/09/2001","Colombiana","6.48416E+11","Colombia","15/04/2030"
+"amanda","12345","Amanda Suarez","3214569789","amnda@gmail.com","1997-12-24","Colombiana","54116651652521856","Colombia","2031-12-26"

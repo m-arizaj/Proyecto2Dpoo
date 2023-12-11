@@ -202,8 +202,6 @@ public class PrincipalCliente extends Application
 	    TextField paisExLicField = new TextField();
 	    Label lblVencimiento = new Label("Fecha de vencimiento de la licencia de conduccion:");
 	    DatePicker fechaVenLicField = new DatePicker();
-	    Label lblTarjeta = new Label("Datos de la tarjeta de credito (numero-cvv-MM/yyyy):");
-	    TextField datosTarjetaField = new TextField();
 
 	    Button btnAceptar = new Button("Aceptar");
 	    btnAceptar.setOnAction(e -> {
@@ -217,9 +215,8 @@ public class PrincipalCliente extends Application
 	        String numeroLicencia = numeroLicConField.getText();
 	        String expedicion = paisExLicField.getText();
 	        String vencimiento = fechaVenLicField.getValue().toString();
-	        String tarjeta = datosTarjetaField.getText();
 	        sistema.agregarCliente(nombreUsuario, contrasena, nombre, numero, correo, fechaNacimiento, 
-	                nacionalidad, numeroLicencia, expedicion, vencimiento, tarjeta);
+	                nacionalidad, numeroLicencia, expedicion, vencimiento);
 	        Persistencia.escribirClientes(sistema, "datos/clientes.csv");
 	        mostrarMensajeExitoRegistro();
 	        primaryStage.setScene(escenaPrincipal);
@@ -246,10 +243,8 @@ public class PrincipalCliente extends Application
 	    layout.add(paisExLicField, 1, 9);
 	    layout.add(lblVencimiento, 0, 10);
 	    layout.add(fechaVenLicField, 1, 10);
-	    layout.add(lblTarjeta, 0, 11);
-	    layout.add(datosTarjetaField, 1, 11);
-	    layout.add(crearBtnRegresar(primaryStage), 0, 12);
-	    layout.add(btnAceptar, 1, 12);
+	    layout.add(crearBtnRegresar(primaryStage), 0, 11);
+	    layout.add(btnAceptar, 1, 11);
 
 	    layout.setStyle("-fx-background-color: beige;");
 	    Scene scene = new Scene(layout, 600, 500);

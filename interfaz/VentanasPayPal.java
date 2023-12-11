@@ -163,7 +163,7 @@
 	            try {
 	                // Crear el archivo y escribir contenido
 	
-	                escribirEnArchivoPDF(rutaArchivo, transaccion);
+	                escribirEnArchivoPDF(rutaArchivo, transaccion, texto);
 	
 	//                escribirEnArchivoPDF(rutaArchivo, "Alquiler de vehiculos\r\n"
 	//                		+ "Id factura: "+ transaccion.getId()+ "\r\n"
@@ -182,12 +182,10 @@
 	
 	                abrirPDF(rutaArchivo);
 	
-	                PanelEmpleado.mostrarVentanaExito(primaryStage, seguro, reserva, menu, rutaArchivo);
+	                PanelEmpleado.mostrarVentanaExito(primaryStage, seguro, reserva, menu, tipo);
 	
 	            } catch (IOException | DocumentException evv) {
 	
-	                abrirPDF(rutaArchivo);
-	                PanelEmpleado.mostrarVentanaExito(primaryStage, seguro, reserva, menu, tipo);
 	                
 	            }
 	        });
@@ -206,20 +204,20 @@
 		}
 		
 	
-		public void escribirEnArchivoPDF(String rutaArchivo, Transaccion transaccion) throws IOException, DocumentException {
+		public void escribirEnArchivoPDF(String rutaArchivo, Transaccion transaccion, String texto) throws IOException, DocumentException {
 		    Document document = new Document();
 		    PdfWriter.getInstance(document, new FileOutputStream(rutaArchivo));
 		    document.open();
 	
 		    // Agregar contenido al PDF
-		    agregarContenidoPDF(document, transaccion);
+		    agregarContenidoPDF(document, transaccion, texto);
 	
 		    // Cerrar el documento manualmente
 		    document.close();
 		}
 	
 	
-		private void agregarContenidoPDF(Document document, Transaccion transaccion) throws DocumentException {
+		private void agregarContenidoPDF(Document document, Transaccion transaccion, String texto) throws DocumentException {
 		    // Agregar contenido al PDF
 		    com.itextpdf.text.Font titleFont = FontFactory.getFont(FontFactory.HELVETICA, 16);
 		    com.itextpdf.text.Font font = FontFactory.getFont(FontFactory.HELVETICA, 12);
@@ -237,7 +235,7 @@
 		    document.add(new Paragraph("Documento: " + transaccion.getDocumento(), font));
 		    document.add(new Paragraph("Correo: " + transaccion.getCorreo(), font));
 		    document.add(new Paragraph("Descripción: " + transaccion.getDescripcion(), font));
-		    document.add(new Paragraph("Medio de Pago: " + transaccion.getMedioPago(), font));
+		    document.add(new Paragraph("Medio de Pago: " + texto, font));
 		    document.add(new Paragraph("----Cuenta cerrada----", font));
 		}
 	
